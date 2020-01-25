@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  	<header>
+  	<header class="page-header">
   		<nav class="menu-header">
   			<a class="logo">
   				<img src="img/index-logo.svg" width="163" height="35" alt="логотип Device">
@@ -25,7 +25,7 @@
 				<button>Корзина</button>
 			</form>
 			-->
-  			<ul>
+  			<ul class="navigation">
   				<li>Каталог товаров
   					<ul class="catalog">
   						<li><a href="inner-1.html">Виртуальная реальность</a></li>
@@ -43,10 +43,51 @@
   		</nav>
   	</header>
 
-  	<main>
+  	<main class="page-main">
   		<h1>Device</h1>
-  		<section>
-  			<!--здесь будут слайдеры-->
+      <!--здесь еще разделы-->
+      <section class="services">
+        <ul>
+          <li class="delivery">
+            <a href="delivery.html">Доставка</a> <!--такая схема с ссылками верна?-->
+            <h2>Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему<br>
+              подъезду совершенно бесплатно! Ведь мы неплохо<br>
+              заработаем, поднимая его на ваш этаж.
+            </p>
+            <img src="img/delivery.png" width="136" height="164" alt="Доставка">
+          </li>
+          <li class="warranty">
+            <a href="warranty.html">Гарантия</a>
+            <h2>Гарантия</h2>
+            <p>
+              Если из-за возгорания купленного у нас товара у вас сгорит<br>
+              дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.
+            </p>
+            <img src="img/warranty.png" width="171" height="194" alt="Гарантия">
+          </li>
+          <li class="credit">
+            <a href="credit.html">Кредит</a>
+            <h2>Кредит</h2>
+            <p>
+              Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
+            <img src="img/credit.png" width="156" height="186" alt="Кредит">
+          </li>
+        </ul>
+      </section>
+
+  		<section class="logos">
+  			<ul>
+          <li><img src="img/logo-1-jpg.jpg" width="260" height="100"></li>
+          <li><img src="img/logo-2-jpg.jpg" width="260" height="100"></li>
+          <li><img src="img/logo-3-jpg.jpg" width="260" height="100"></li>
+          <li><img src="img/logo-4-jpg.jpg" width="260" height="100"></li>
+        </ul>
   		</section>
 
   		<section class="abous-us">
@@ -75,7 +116,7 @@
   		</section>
   	</main>
 
-  	<footer>
+  	<footer class="page-footer">
   		<a class="logo">
   			<img src="img/index-logo.svg" width="163" height="35" alt="логотип Device">
   		</a>
