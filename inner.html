@@ -41,6 +41,7 @@
     </nav>
   </header>
 
+
   <main>
     <h1>Моноподы для селфи</h1>
     <ul>
@@ -49,17 +50,33 @@
       <li>Моноподы для селфи</li>
     </ul>
 
-    <section>
-        <h2></h2>
-      <section>
-        <h3>Фильтр товаров</h3>
-        <!--эта часть бонусного задания)-->
+    <section class="catalog">
+        <h2>Каталог товаров</h2>
+      <section class="filter">
+        <form> <!--пока оформлена списком-->
+          <ul class="filter-back">Фильтр
+            <li>
+              <ul class="sort-back">Сортировка
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По популярности</li>
+              </ul>
+            </li>
+            <li>Стоимость</li>
+            <li>Цвет</li>
+            <li>Bluetooth</li>
+          </ul>
+        </form>
       </section>
 
-      <section>
+      <section class="items">
         <ul>
-          <li>
+          <li class="item">
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <div hidden>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </div>
             <div class="box">
               <a href="#">
                 <h3>Любительская селфи-палка</h3>
@@ -67,8 +84,13 @@
               <span>500 руб.</span>
             </div>
           </li>
-          <li>
+
+          <li class="item">
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <div hidden>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </div>
             <div class="box">
               <a href="#">
                 <h3>Профессиональная селфи-палка</h3>
@@ -76,8 +98,13 @@
               <span>1 500 руб.</span>
             </div>
           </li>
-          <li>
+
+          <li class="item">
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <div hidden>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </div>
             <div class="box">
               <a href="#">
                 <h3>Непотопляемая селфи-палка</h3>
@@ -85,8 +112,13 @@
               <span>2 500 руб.</span>
             </div>
           </li>
-          <li>
+
+          <li class="item">
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <div hidden>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </div>
             <div class="box">
               <a href="#">
                 <h3>Селфи-палка «Следуй за мной»</h3>
@@ -96,8 +128,19 @@
           </li>
         </ul>
       </section>
+
+      <div class="paginator">
+        <button type="button">Назад</button>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+        <button type="button">Вперёд</button>
+      </div>
   </section>
   </main>
+
 
   <footer>
     <a class="logo" href="index.html">
