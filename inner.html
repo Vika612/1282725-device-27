@@ -53,27 +53,50 @@
     <section class="catalog">
         <h2>Каталог товаров</h2>
       <section class="filter">
-        <form> <!--пока оформлена списком-->
+        <form> 
           <ul class="filter-back">Фильтр
             <li>
               <ul class="sort-back">Сортировка
-                <li>По цене</li>
+                <li>По цене</li> <!--кнопка?-->
                 <li>По типу</li>
                 <li>По популярности</li>
+                <li>icon</li> <!--кнопка?-->
               </ul>
             </li>
-            <li>Стоимость</li>
-            <li>Цвет</li>
-            <li>Bluetooth</li>
+
+            <li class="price">
+              <ul>Стоимость
+                <li><input type="range" name="price" min="0" max="2" step="1" value="1"></li>
+                <li><span>от 0</span> <span>до 5000</span></li>
+              </ul>
+            </li>
+
+            <li class="color">
+              <ul>Цвет
+                <li><input type="checkbox" name="black" value="Черный" checked></li>
+                <li><input type="checkbox" name="white" value="Белый"></li>
+                <li><input type="checkbox" name="blue" value="Синий" checked></li>
+                <li><input type="checkbox" name="red" value="Красный" checked></li>
+                <li><input type="checkbox" name="pink" value="Розовый"></li>
+              </ul>
+            </li>
+
+            <li class="Bluetooth">
+              <ul>Bluetooth
+                <li><input type="radio" name="yes" value="Есть" checked ></li>
+                <li><input type="radio" name="not" value="Нет"></li>
+              </ul>
+            </li>
+            <button type="button">Показать</button>
           </ul>
         </form>
       </section>
 
       <section class="items">
         <ul>
-          <li class="item">
+          <li class="item item-1">
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <div hidden>
+            <div class="hidden">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
@@ -85,9 +108,9 @@
             </div>
           </li>
 
-          <li class="item">
+          <li class=" item item-2">
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <div hidden>
+            <div class="hidden">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
@@ -99,9 +122,9 @@
             </div>
           </li>
 
-          <li class="item">
+          <li class="item item-3">
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <div hidden>
+            <div class="hidden">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
@@ -113,9 +136,9 @@
             </div>
           </li>
 
-          <li class="item">
+          <li class="item item-4">
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <div hidden>
+            <div class="hidden">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
