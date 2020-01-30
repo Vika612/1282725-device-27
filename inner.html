@@ -9,7 +9,7 @@
   <header class="page-header">
     <nav class="menu-header">
       <a class="logo" href="index.html">
-        <img src="img/logo-device.svg" width="163" height="35" alt="логотип Device">
+        <img src="img/logo-device.svg" width="163" height="35" alt="логотип компании Device">
       </a>
       
       <form action="" method="get">
@@ -50,7 +50,7 @@
     </ul>
 
     <section class="catalog">
-        <h2 class="title-invisible">Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров</h2>
 
       <section class="filter">
         <ul class="filter-back">Фильтр
@@ -105,17 +105,21 @@
           <li>
             <ul class="sort-back">Сортировка
               <li>
-                <button type="button">По цене</button>
+                <a href="#">По цене</a>
               </li>
               <li>
-                <button type="button">По типу</button>
+                <a href="#">По типу</a>
               </li>
               <li>
-                <button type="button">По популярности</button>
+                <a href="#">По популярности</a>
               </li>
               <li>
-                <img src="img/icon-up-dir.svg">
-                <img src="img/icon-down-dir.svg">
+                <button type="button">
+                  <img src="img/icon-up-dir.svg" width="11" height="10" alt="стрелка 'вверх'">
+                </button>
+                <button type="button">
+                  <img src="img/icon-down-dir.svg" width="11" height="10" alt="стрелка 'вниз'">
+                </button>
               </li>
             </ul>
           </li>
@@ -124,11 +128,11 @@
         <ul>
           <li class="item item-1">
             <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <div class="hidden">
+            <div class="item-hover">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-            <div class="box">
+            <div class="item-box">
               <h3>
                 <a href="#">Любительская селфи-палка</a>
               </h3>
@@ -138,11 +142,11 @@
 
           <li class=" item item-2">
             <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <div class="hidden">
+            <div class="item-hover">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-            <div class="box">
+            <div class="item-box">
               <h3>
                 <a href="#">Профессиональная селфи-палка</a>
               </h3>
@@ -152,11 +156,11 @@
 
           <li class="item item-3">
             <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <div class="hidden">
+            <div class="item-hover">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-            <div class="box">
+            <div class="item-box">
               <h3>
                 <a href="#">Непотопляемая селфи-палка</a>
               </h3>
@@ -166,11 +170,11 @@
 
           <li class="item item-4">
             <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <div class="hidden">
+            <div class="item-hover">
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-            <div class="box">
+            <div class="item-box">
               <h3>
                 <a href="#">Селфи-палка «Следуй за мной»</a>
               </h3>
@@ -195,7 +199,7 @@
 
   <footer class="page-footer">
     <a class="logo" href="index.html">
-      <img src="img/logo-device.svg" width="163" height="35" alt="логотип Device">
+      <img src="img/logo-device.svg" width="163" height="35" alt="логотип компании Device">
     </a>
 
     <ul class="add">
@@ -205,7 +209,7 @@
     </ul>
 
     <p class="adress">
-      г.Москва, ул.Строительная, 15
+      г.Москва, ул.Строителей, 15
     </p>
 
     <ul class="menu-footer">
