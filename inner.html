@@ -17,36 +17,34 @@
       </form>
 
       <ul class="add">
-        <li><span>Валентин Петухов</span><a href="login.html">Выйти</a></li>   <!--ТЗ пункт 3.3-->
+        <li><a href="login.html">Валентин Петухов</a>Выйти</li>   
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
 
       <ul class="menu-catalog">
-          <li><a href="#">Каталог товаров</a></li>
-            <ul>
-              <li><a href="inner-1.html">Виртуальная реальность</a></li>
-              <li><a href="inner.html">Моноподы для селфи</a></li>
-              <li><a href="inner-3.html">Экшн-камеры</a></li>
-              <li><a href="inner-4.html">Фитнес-браслеты</a></li>
-              <li><a href="inner-5.html">Умные часы</a></li>
-              <li><a href="inner-6.html">Квадрокоптеры</a></li>
-            </ul>
-        </ul>
+        <li><a href="#">Каталог товаров</a></li>
+          <ul>
+            <li><a href="inner-1.html">Виртуальная реальность</a></li>
+            <li><a href="inner.html">Моноподы для селфи</a></li>
+            <li><a href="inner-3.html">Экшн-камеры</a></li>
+            <li><a href="inner-4.html">Фитнес-браслеты</a></li>
+            <li><a href="inner-5.html">Умные часы</a></li>
+            <li><a href="inner-6.html">Квадрокоптеры</a></li>
+          </ul>
+      </ul>
 
-        <ul class="navigation">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+      <ul class="navigation">
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
   <main class="page-main">
-    <h1 class="main-title">
-      Моноподы для селфи
-    </h1>
+    <h1 class="main-title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог товаров</a></li>
@@ -56,7 +54,7 @@
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
 
-      <section class="filter">
+      <section class="filter">                 <!--формы сдам в следующем разделе-->
         <h3 class="filter-title">Фильтр</h3>
         <ul class="filter-back">
           <li class="price">
@@ -101,39 +99,31 @@
               </li>
             </ul>
           </li>
-          <button type="button">Показать</button>
+          <button type="submit">Показать</button>
         </ul>
       </section>
 
       <section class="items">
         <h3 class="items-title">Сортировка</h3>
-        <ul>
+        <ul class="sort-back">
           <li>
-            <ul class="sort-back">
-              <li>
-                <a href="#">По цене</a>
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По популярности</a>
-              </li>
-              <li>
-                <button type="button">
-                  <img src="img/icon-up-dir.svg" width="11" height="10" alt="стрелка 'вверх'">
-                </button>
-                <button type="button">
-                  <img src="img/icon-down-dir.svg" width="11" height="10" alt="стрелка 'вниз'">
-                </button>
-              </li>
-            </ul>
+            <button type="button">По цене</button>
+          </li>
+          <li>
+            <button type="button">По типу</button>
+          </li>
+          <li>
+            <button type="button">По популярности</button>
+          </li>
+          <li>
+            <button class="up" type="button">Стрелка вверх</button>
+            <button class="down" type="button">Стрелка вниз</button>
           </li>
         </ul>
 
-        <ul>
-          <li class="item item-1">
-            <img src="img/item-1-jpg.jpg" width="360" height="380">
+        <ul class="item">
+          <li class="item-1">
+            <img src="img/item-1-jpg.jpg" width="360" height="380" aria-hidden="true" alt="Любительская селфи-палка">
             <div class="item-box">
               <h3>
                 <a href="#">Любительская селфи-палка</a>
@@ -146,8 +136,8 @@
             </div>
           </li>
 
-          <li class=" item item-2">
-            <img src="img/item-2-jpg.jpg" width="360" height="380">
+          <li class="item-2">
+            <img src="img/item-2-jpg.jpg" width="360" height="380" aria-hidden="true" alt="Профессиональная селфи-палка">
             <div class="item-box">
               <h3>
                 <a href="#">Профессиональная селфи-палка</a>
@@ -160,8 +150,8 @@
             </div>
           </li>
 
-          <li class="item item-3">
-            <img src="img/item-3-jpg.jpg" width="360" height="380">
+          <li class="item-3">
+            <img src="img/item-3-jpg.jpg" width="360" height="380" aria-hidden="true" alt="Непотопляемая селфи-палка">
             <div class="item-box">
               <h3>
                 <a href="#">Непотопляемая селфи-палка</a>
@@ -174,8 +164,8 @@
             </div>
           </li>
 
-          <li class="item item-4">
-            <img src="img/item-4-jpg.jpg" width="360" height="380">
+          <li class="item-4">
+            <img src="img/item-4-jpg.jpg" width="360" height="380" aria-hidden="true" alt="Селфи-палка «Следуй за мной»">
             <div class="item-box">
               <h3>
                 <a href="#">Селфи-палка «Следуй за мной»</a>
@@ -189,7 +179,7 @@
           </li>
         </ul>
       </section>
-
+    
       <div class="paginator">
         <button type="button">Назад</button>
         <ul>
@@ -209,7 +199,7 @@
     </a>
 
     <ul class="add">
-      <li><span>Валентин Петухов</span> <a href="login.html">Выйти</a></li>     <!--ТЗ пунк 3.3-->
+       <li><a href="login.html">Валентин Петухов</a>Выйти</li>   
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
     </ul>
@@ -250,5 +240,5 @@
       <img src="img/logo-html.svg" width="27" height="35" alt="HTML и CSS, уровень 1">
     </a>
   </footer>
-  </body>
-  </html>
+</body>
+</html>
