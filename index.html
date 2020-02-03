@@ -302,5 +302,35 @@
   			<img src="img/logo-html.svg" width="27" height="35" alt="HTML и CSS, уровень 1">
   		</a>
   	</footer>
+
+ <!--Windows Modal-->
+ 
+     <section class="modal modal-write_us">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="fullname">Ваше имя:</label>
+            <input id="fullname" type="text" name="fullname" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="mail">Ваш e-mail:</label>
+            <input id="mail" type="email" name="mail" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="message">Текст письма:</label>
+            <textarea id="message" type="text" name="message" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
+        </form>
+      </section>
+
+      <section class="modal modal-map">
+        <figure>
+          <figcaption>Большая карта</figcaption>
+          <img src="img/map-big.png" width="960" height="559" alt="Адрес офиса: город Москва, улица Строителей, 15">
+          <button class="modal-close" type="button">Закрыть</button>
+        </figure>
+      </section>
+
   </body>
 </html>
