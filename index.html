@@ -7,22 +7,24 @@
   <body>
   	<header class="page-header">
       <h1 class="visually-hidden">Интернет магазин Девайс</h1>
-  		<nav class="menu-header">
+  		<nav class="site-navigation">
   			<a class="logo">
   				<img src="img/logo-device.svg" width="163" height="35" alt="логотип компании Девайс">
   			</a>
   			
   			<form action="https://echo.htmlacademy.ru" method="post">
-  				<input type="search" name="search" placeholder="Поиск по сайту...">
+          <label class="visually-hidden">Поиск по сайту
+  				  <input type="search" name="search" placeholder="Поиск по сайту...">
+          </label>
 			  </form>
 
-        <ul class="add">
+        <ul class="user-navigation">
           <li><a href="login.html">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
 			
-				<ul class="menu-catalog">
+				<ul class="catalog-navigation">
           <li><a href="#">Каталог товаров</a></li>
             <ul>
       				<li><a href="inner-1.html">Виртуальная реальность</a></li>
@@ -34,7 +36,7 @@
             </ul>
 				</ul>
 
-        <ul class="navigation">
+        <ul class="service-navigation">
   				<li><a href="delivery.html">Доставка</a></li>
   				<li><a href="warranty.html">Гарантия</a></li>
   				<li><a href="contacts.html">Контакты</a></li>
@@ -46,15 +48,15 @@
   	<main class="page-main">
       <section class="slider">
         <h2 class="visually-hidden">Слайдер товаров</h2>
-        <!--<ul class="slider-links">
+        <ul class="slider-links">
           <li><button type="button"></button></li>     
           <li><button type="button"></button></li>
           <li><button type="button"></button></li>
-        </ul>-->
+        </ul>
         
         <ul class="slider-items">
           <li class="slider-item-1">
-            <img src="img/slider-1-png.png" width="384" height="486" alt="Самая длинная палка для селфи">
+            <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
             <div class="slider-desc">
               <h2 class="slider-title">01</h2>
               <p class="slider-slogan">
@@ -90,7 +92,7 @@
           </li>
 
           <li class="slider-item-2">
-            <img src="img/slider-2-png.png" width="345" height="485" alt="Фитнес-браслет">
+            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             <div class="slider-desc">
               <h2 class="slider-title">02</h2>
               <p class="slider-slogan">
@@ -114,7 +116,7 @@
           </li>
 
           <li class="slider-item-3">
-            <img src="img/slider-3-png.png" width="526" height="334" alt="Квадрокоптер">
+            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
             <div class="slider-desc">
               <h2 class="slider-title">03</h2>
               <p class="slider-slogan">
@@ -192,11 +194,11 @@
 
       <section class="slider2">
         <h2 class="visually-hidden">Слайдер услуг</h2>
-        <!--<ul class="slider-links">
+        <ul class="slider-links">
           <li><button type="button"></button></li>     
           <li><button type="button"></button></li>
           <li><button type="button"></button></li>
-        </ul>-->
+        </ul>
 
         <ul class="slider2-services">
           <li class="slider2-delivery">
@@ -232,11 +234,8 @@
         <h2 class="visually-hidden">Сотрудничество</h2>
   			<ul>
           <li><a href="#">Логотип компании DJI</a></li>
-
           <li><a href="#">Логотип компании Gadgets</a></li>
-
           <li><a href="#">Логотип компании GoPro</a></li>
-
           <li><a href="#">Логотип компании VIVE</a></li>
         </ul>
   		</section>
@@ -249,7 +248,7 @@
   			<p>
   				Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями
   			</p>
-  			<ul>
+  			<ul class="abous_us-partner">
   				<li>Деловые Линии</li>
   				<li>Автотрейдинг</li>
   				<li>ЖелДорЭкспедиция</li>
@@ -262,8 +261,8 @@
   			<p>
   				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает
   			</p>
-  			<a href="img/map-big-jpg.png"><img src="img/map-jpg.png" width="560" height="222" alt="Адрес офиса: город Москва, улица Строителей, 15"></a>
-  			<button type="button">Напишите нам</button>
+  			<button type="button"><img src="img/map.png" width="560" height="222" alt="Адрес офиса: город Москва, улица Строителей, 15"></button>
+  			<button class="write_us-btn" type="button">Напишите нам</button>
   		</section>
   	</main>
 
@@ -273,7 +272,7 @@
   			<img src="img/logo-device.svg" width="163" height="35" alt="логотип компании Девайс">
   		</a>
 
-      <ul class="add">
+      <ul class="user-navigation">
         <li><a href="#">Войти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
@@ -283,7 +282,7 @@
 			  г.Москва, ул.Строителей, 15
 		  </p>
 
-  		<ul class="menu-footer">
+  		<ul class="service-navigation">
   			<li><a href="delivery.html">Доставка</a></li>
   			<li><a href="warranty.html">Гарантия</a></li>
   			<li><a href="contacts.html">Контакты</a></li>
@@ -294,27 +293,14 @@
   		</p>
 
   		<ul class="social">
-  			<li>
-          <a href="#">
-            <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
-          </a>
-        </li>
+  			<li><a href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></li>
+        <li><a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
   		</ul>
 
   		<a href="https://htmlacademy.ru/intensive/htmlcss">
   			<img src="img/logo-html.svg" width="27" height="35" alt="HTML и CSS, уровень 1">
   		</a>
   	</footer>
-
   </body>
 </html>
