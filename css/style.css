@@ -1,0 +1,197 @@
+@font-face {
+	font-family: "Gilroy Extrabold";
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+	src: url("../fonts/gilroyextrabold.woff") format("woff"); 
+}
+@font-face {
+	font-family: "Gilroy Light";
+	src: url("../fonts/gilroylight.woff2") format("woff2");
+	src: url("../fonts/gilroylight.woff") format("woff");
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans Light", "Tahoma", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+
+	color: #000000;
+	background-color: #ffffff;
+}
+
+img {max-width: 100%;}
+
+.feedback ul {list-style: none;}
+.feedback a {text-decoration: none;}
+
+.button {
+	font-family: "Gilroy Extrabold";
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+
+	color: #000000;
+	background-color: #f0c52e;
+}
+
+.button-state:focus {
+	background-color: #f0c52e;
+}
+
+.button-state:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header,
+.exit,
+input[type="search"] {
+	background-color: #F7E397; 
+}
+
+.user-navigation a {
+	color: #000000;
+}
+
+.catalog-navigation a {
+	line-height: 36px;
+	color: #000000;
+}
+
+.catalog-navigation > li > a,
+.service-navigation a {
+	font-family: "Gilroy Extrabold";
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.logo-link:hover,
+.logo-link:focus,
+.logo-html:hover,
+.logo-html:focus{
+	color: #000000;
+	opacity: 0.6;
+}
+
+.site-navigation a:active,
+.site-navigation a:active,
+.logo-link:active,
+.logo-html:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.page-main h2 {
+	font-family: "Gilroy Extrabold";
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.47px;
+}
+
+.about_us-partner {
+	font-family: "Gilroy Extrabold";
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.filter legend,
+.item-box a {
+	font-family: "Gilroy Extrabold";
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
+	font-family: "Open Sans Light";
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.filter label {
+	font-family: "Open Sans Light";
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.14px;
+	color: #464646;
+}
+
+.item-box span {
+	font-family: "Gilroy Light";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.16px;
+	color: #464646;
+}
+
+.page-footer,
+.user-exit {
+	color: #ffffff;
+	background-color: #464646;
+}
+
+.user-footer_wrap a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-footer_wrap a:hover,
+.user-footer_wrap a:focus {
+	color: #ffffff;
+}
+
+.user-footer_wrap a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.service-navigation-footer a {
+	font-family: "Gilroy Extrabold";
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	color: #ffffff;
+}
+
+.service-navigation-footer a:hover,
+.service-navigation-footer a:focus {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.service-navigation-footer a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.phone a {
+	color: #ffffff;
+}
+
+.social a:link {
+	opacity: 0.3;
+}
+
+.social a:hover,
+.social a:focus {
+	opacity: 0.6;
+}
+
+.social a:active {
+	opacity: 0.1;
+}
+
+.visually-hidden { display: none;}
+
+.modal {display: none;}

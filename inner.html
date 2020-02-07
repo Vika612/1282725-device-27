@@ -3,51 +3,58 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header feedback">
+    <a class="logo-link" href="index.html">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип компании Девайс">
+    </a>
+
     <nav class="site-navigation">
-      <a class="logo" href="index.html">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип компании Девайс">
-      </a>
-      
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden">Поиск по сайту
-          <input type="search" name="search" placeholder="Поиск по сайту...">
-        </label>
-      </form>
+      <div class="user-navigation_wrap">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label>
+            <input type="search" name="search" placeholder="Поиск по сайту...">
+          </label>
+        </form>
+      </div>
 
-      <ul class="user-navigation">
-        <li><a href="login.html">Валентин Петухов</a></li>  
-        <li><button type="button">Выйти</button></li> 
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
+      <div class="menu-navigation_wrap">
+        <ul class="user-navigation">
+          <li><a class="user" href="login.html">Валентин Петухов</a></li>  
+          <li><button class="exit" type="button">Выйти</button></li> 
+          <li><a class="compare" href="#">Сравнить</a></li>
+          <li><a class="cart" href="#">Корзина</a></li>
+        </ul>
 
-      <ul class="catalog-navigation">
-        <li><a href="#">Каталог товаров</a></li>
-          <ul>
-            <li><a href="inner-1.html">Виртуальная реальность</a></li>
-            <li><a href="inner.html">Моноподы для селфи</a></li>
-            <li><a href="inner-3.html">Экшн-камеры</a></li>
-            <li><a href="inner-4.html">Фитнес-браслеты</a></li>
-            <li><a href="inner-5.html">Умные часы</a></li>
-            <li><a href="inner-6.html">Квадрокоптеры</a></li>
-          </ul>
-      </ul>
+        <ul class="catalog-navigation">
+          <li><a href="#">Каталог товаров</a></li>
+            <ul>
+              <li><a href="inner-1.html">Виртуальная реальность</a></li>
+              <li><a href="inner.html">Моноподы для селфи</a></li>
+              <li><a href="inner-3.html">Экшн-камеры</a></li>
+              <li><a href="inner-4.html">Фитнес-браслеты</a></li>
+              <li><a href="inner-5.html">Умные часы</a></li>
+              <li><a href="inner-6.html">Квадрокоптеры</a></li>
+            </ul>
+        </ul>
 
-      <ul class="service-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
+        <ul class="service-navigation">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
 
-  <main class="page-main">
-    <h1 class="main-title">Моноподы для селфи</h1>
+  <main class="page-main feedback">
+    <h2 class="inner-title">Моноподы для селфи</h2>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог товаров</a></li>
@@ -104,7 +111,7 @@
                 <label for="no">Нет</label>
               </p>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -128,7 +135,7 @@
               <span>500 руб.</span>
             </div>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button button-state" type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
           </li>
@@ -140,7 +147,7 @@
               <span>1 500 руб.</span>
             </div>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button button-state" type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
           </li>
@@ -152,7 +159,7 @@
               <span>2 500 руб.</span>
             </div>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button button-state" type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
           </li>
@@ -164,7 +171,7 @@
               <span>4 900 руб.</span>
             </div>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button button-state" type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
           </li>
@@ -184,41 +191,47 @@
   </main>
 
 
-  <footer class="page-footer">
-    <a class="logo" href="index.html">
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип компании Девайс">
-    </a>
+  <footer class="page-footer feedback">
+    <div class="user-footer_wrap">
+      <a class="logo-link" href="index.html">
+        <img src="img/logo-device-color.svg" width="163" height="35" alt="Логотип компании Девайс">
+      </a>
 
-    <ul class="user-navigation">
-      <li><a href="login.html">Валентин Петухов</a></li>   
-      <li><button type="button">Выйти</button></li>
-      <li><a href="#">Сравнить</a></li>
-      <li><a href="#">Корзина</a></li>
-    </ul>
+      <ul class="user-navigation">
+        <li><a href="login.html">Валентин Петухов</a></li>   
+        <li><button class="user-exit" type="button">Выйти</button></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </div>
 
-    <p class="adress">
-      г.Москва, ул.Строителей, 15
-    </p>
+    <div class="service-footer_wrap">
+      <p class="adress">
+        г.Москва, ул.Строителей, 15
+      </p>
 
-    <ul class="service-navigation">
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="warranty.html">Гарантия</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+      <ul class="service-navigation-footer">
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
 
-    <p class="phone">Тел:
-      <a href="tel: +74954959595">+7(495)495-95-95</a>
-    </p>
+      <p class="phone">Тел:
+        <a href="tel: +74954959595">+7 (495) 495-95-95</a>
+      </p>
+    </div>
 
-    <ul class="social">
-      <li><a href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></li>
-      <li><a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
-      <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
-    </ul>
+    <div class="social_wrap">
+      <ul class="social">
+        <li><a href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></li>
+        <li><a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
+      </ul>
 
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-html.svg" width="27" height="35" alt="HTML и CSS, уровень 1">
-    </a>
+      <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-html.svg" width="27" height="35" alt="HTML и CSS, уровень 1">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
