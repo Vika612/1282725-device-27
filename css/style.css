@@ -123,6 +123,15 @@ input[type="search"] {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
 .filter label {
 	font-family: "Open Sans Light";
 	font-size: 14px;
