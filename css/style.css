@@ -2,11 +2,15 @@
 	font-family: "Gilroy Extrabold";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2");
 	src: url("../fonts/gilroyextrabold.woff") format("woff"); 
+	font-weight: 800;
+	font-style: normal;
 }
 @font-face {
 	font-family: "Gilroy Light";
 	src: url("../fonts/gilroylight.woff2") format("woff2");
 	src: url("../fonts/gilroylight.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
 }
 
 html {
@@ -30,6 +34,7 @@ img {max-width: 100%;}
 
 .feedback ul {list-style: none;}
 .feedback a {text-decoration: none;}
+.feedback p {margin-bottom: 0;}
 
 .button {
 	font-family: "Gilroy Extrabold";
@@ -50,19 +55,33 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.page-header,
-.exit,
-input[type="search"] {
-	background-color: #F7E397; 
+.button-compare {
+	font-family: "Open Sans Light";
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.13px;
+	color: rgba(0, 0, 0, 0.5);
 }
 
-.user-navigation a {
+.button-compare:hover,
+.button-compare:focus {
+	color: #000000;
+}
+
+.button-compare:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.site-navigation {
+	background-color: #F7E397;     /*кнопкам как то отдельно задать фон?*/
+}
+
+.site-navigation a {
 	color: #000000;
 }
 
 .catalog-navigation a {
 	line-height: 36px;
-	color: #000000;
 }
 
 .catalog-navigation > li > a,
@@ -71,7 +90,6 @@ input[type="search"] {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 3.6px;
-	color: #000000;
 }
 
 .site-navigation a:hover,
@@ -80,7 +98,6 @@ input[type="search"] {
 .logo-link:focus,
 .logo-html:hover,
 .logo-html:focus{
-	color: #000000;
 	opacity: 0.6;
 }
 
@@ -88,7 +105,6 @@ input[type="search"] {
 .site-navigation a:active,
 .logo-link:active,
 .logo-html:active {
-	color: #000000;
 	opacity: 0.3;
 }
 
@@ -99,12 +115,48 @@ input[type="search"] {
 	letter-spacing: 0.47px;
 }
 
+h2.slider-title {
+	font-family: "Gilroy Extrabold";
+	font-size: 179px;
+	line-height: 179px;
+	letter-spacing: 1.79px;
+	/*color: #ffffff;*/
+}
+
+p.slider-slogan {
+	font-family: "Gilroy Extrabold";
+	font-size: 47px;
+	line-height: 56px;
+	letter-spacing: 0.47px;
+}
+
+.slider-desc dt {
+	font-family: "Open Sans Light";
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0.13px;
+}
+
+.slider-desc dd {
+	font-family: "Gilroy Light";
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 48px;
+	letter-spacing: 0.36px;
+}
+
+.main-catalog img {             /*наверно все-таки декор?*/
+	background-color: #F7E397;
+}
+
 .about_us-partner {
 	font-family: "Gilroy Extrabold";
 	font-size: 16px;
 	line-height: 40px;
 }
 
+.main-catalog h3,
 .filter legend,
 .item-box a {
 	font-family: "Gilroy Extrabold";
@@ -112,6 +164,63 @@ input[type="search"] {
 	line-height: 24px;
 	letter-spacing: 0.18px;
 	color: #000000;
+}
+
+input[type=checkbox],         /*где заблокированная??? не понимаю, в стайлгайде есть*/
+input[type=radio] {
+	display: none;
+}
+
+input[type=checkbox]:checked + label::before {
+	content: url("../img/checkbox-on.svg");
+}
+
+input[type=checkbox]:checked:hover + label::before,
+input[type=checkbox]:checked:focus + label::before {
+	opacity: 0.6;
+}
+
+input[type=checkbox]:checked:active + label::before {
+	content: url("../img/checkbox-off.svg");
+}
+
+input[type=checkbox]:not(:checked) + label::before {
+	content: url("../img/checkbox-off.svg"); 
+}
+
+input[type=checkbox]:not(:checked):hover + label::before,
+input[type=checkbox]:not(:checked):focus + label::before {
+	opacity: 0.6;
+}
+
+input[type=checkbox]:not(:checked):active + label::before {
+	content: url("../img/checkbox-on.svg");
+}
+
+input[type=radio]:checked + label::before {
+	content: url("../img/radio-on.svg");
+}
+
+input[type=radio]:checked:hover + label::before,
+input[type=radio]:checked:focus + label::before {
+	opacity: 0.6;
+}
+
+input[type=radio]:checked:active + label::before {
+	content: url("../img/radio-off.svg");
+}
+
+input[type=radio]:not(:checked) + label::before {
+	content: url("../img/radio-off.svg");
+}
+
+input[type=radio]:not(:checked):hover + label::before,
+input[type=radio]:not(:checked):focus + label::before {
+	opacity: 0.6;
+}
+
+input[type=radio]:not(:checked):active + label::before {
+	content: url("../img/radio-on.svg");
 }
 
 .breadcrumbs a,
@@ -148,8 +257,7 @@ input[type="search"] {
 	color: #464646;
 }
 
-.page-footer,
-.user-exit {
+.page-footer {
 	color: #ffffff;
 	background-color: #464646;
 }
