@@ -1,12 +1,12 @@
 @font-face {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2");
 	src: url("../fonts/gilroyextrabold.woff") format("woff"); 
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Gilroy Light";
+	font-family: "Gilroy";
 	src: url("../fonts/gilroylight.woff2") format("woff2");
 	src: url("../fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
@@ -37,16 +37,21 @@ img {max-width: 100%;}
 .feedback p {margin-bottom: 0;}
 
 .button {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 18px;
+	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
+	border: 0;
 
 	color: #000000;
-	background-color: #f0c52e;
+	background-color: #ffffff;
+	background-image: linear-gradient(transparent 35%, #f0c52e 35%, 
+					#f0c52e 65%, transparent 65%);
 }
 
+.button-state:hover,
 .button-state:focus {
 	background-color: #f0c52e;
 }
@@ -55,10 +60,16 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.slider-links .button-state:active {
+	color: #f7e184;
+	background-color: #000000;
+	background-image: none;
+}
+
 .button-compare {
 	font-family: "Open Sans Light";
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 36px;
 	letter-spacing: 0.13px;
 	color: rgba(0, 0, 0, 0.5);
 }
@@ -72,8 +83,8 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.2);
 }
 
-.site-navigation {
-	background-color: #F7E397;     /*кнопкам как то отдельно задать фон?*/
+.page-header {
+	background-color: #F7E397;     
 }
 
 .site-navigation a {
@@ -84,12 +95,14 @@ img {max-width: 100%;}
 	line-height: 36px;
 }
 
-.catalog-navigation > li > a,
+.catalog-navigation > a,
 .service-navigation a {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 18px;
+	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 3.6px;
+	text-transform: uppercase;
 }
 
 .site-navigation a:hover,
@@ -109,23 +122,26 @@ img {max-width: 100%;}
 }
 
 .page-main h2 {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 47px;
+	font-weight: 800;
 	line-height: 48px;
 	letter-spacing: 0.47px;
 }
 
 h2.slider-title {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 179px;
+	font-weight: 800;
 	line-height: 179px;
 	letter-spacing: 1.79px;
 	/*color: #ffffff;*/
 }
 
 p.slider-slogan {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 47px;
+	font-weight: 800;
 	line-height: 56px;
 	letter-spacing: 0.47px;
 }
@@ -139,28 +155,30 @@ p.slider-slogan {
 }
 
 .slider-desc dd {
-	font-family: "Gilroy Light";
+	font-family: "Gilroy";
 	font-size: 36px;
 	font-weight: 300;
 	line-height: 48px;
 	letter-spacing: 0.36px;
 }
 
-.main-catalog img {             /*наверно все-таки декор?*/
+.main-catalog img {             
 	background-color: #F7E397;
 }
 
 .about_us-partner {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 16px;
+	font-weight: 800;
 	line-height: 40px;
 }
 
 .main-catalog h3,
 .filter legend,
 .item-box a {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 18px;
+	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 0.18px;
 	color: #000000;
@@ -250,8 +268,9 @@ input[type=radio]:not(:checked):active + label::before {
 }
 
 .item-box span {
-	font-family: "Gilroy Light";
+	font-family: "Gilroy";
 	font-size: 16px;
+	font-weight: 300;
 	line-height: 24px;
 	letter-spacing: 0.16px;
 	color: #464646;
@@ -276,8 +295,9 @@ input[type=radio]:not(:checked):active + label::before {
 }
 
 .service-navigation-footer a {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	font-size: 18px;
+	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 3.6px;
 	color: #ffffff;
@@ -312,3 +332,4 @@ input[type=radio]:not(:checked):active + label::before {
 .visually-hidden { display: none;}
 
 .modal {display: none;}
+
