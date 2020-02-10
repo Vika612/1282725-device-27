@@ -21,8 +21,9 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Open Sans Light", "Tahoma", sans-serif;
+	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 15px;
+	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: 0.15px;
 
@@ -67,8 +68,9 @@ img {max-width: 100%;}
 }
 
 .button-compare {
-	font-family: "Open Sans Light";
+	font-family: "Open Sans";
 	font-size: 13px;
+	font-weight: 300;
 	line-height: 36px;
 	letter-spacing: 0.13px;
 	color: rgba(0, 0, 0, 0.5);
@@ -84,15 +86,21 @@ img {max-width: 100%;}
 }
 
 .page-header {
-	background-color: #F7E397;     
+	width: 1160px;
+	background-color: rgba(240, 197, 46, 0.5); 
+}
+
+.site-navigation ul {
+	padding-left: 0;
 }
 
 .site-navigation a {
 	color: #000000;
 }
 
-.catalog-navigation a {
+.sub-menu a {
 	line-height: 36px;
+	display: none;
 }
 
 .catalog-navigation > a,
@@ -147,7 +155,7 @@ p.slider-slogan {
 }
 
 .slider-desc dt {
-	font-family: "Open Sans Light";
+	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 20px;
@@ -160,6 +168,17 @@ p.slider-slogan {
 	font-weight: 300;
 	line-height: 48px;
 	letter-spacing: 0.36px;
+}
+
+.slider2-services {
+	padding-left: 0;
+}
+
+.slider2-delivery,
+.slider2-warranty,
+.slider2-credit {
+	width: 1360px;
+	background-color: #e5e5e5;
 }
 
 .about_us-partner {
@@ -178,6 +197,38 @@ p.slider-slogan {
 	line-height: 24px;
 	letter-spacing: 0.18px;
 	color: #000000;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.filter-title,
+.paginator button {
+	font-family: "Gilroy";
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	letter-spacing: 3.2px;
+}
+
+.filter {
+	background-color: #ebebeb;
 }
 
 input[type=checkbox],         /*где заблокированная??? не понимаю, в стайлгайде есть*/
@@ -237,30 +288,40 @@ input[type=radio]:not(:checked):active + label::before {
 	content: url("../img/radio-on.svg");
 }
 
-.breadcrumbs a,
-.breadcrumbs li {
-	font-family: "Open Sans Light";
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.14px;
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.breadcrumbs a:active {
-	color: rgba(0, 0, 0, 0.1);
-}
-
 .filter label {
-	font-family: "Open Sans Light";
+	font-family: "Open Sans";
 	font-size: 14px;
+	font-weight: 300;
 	line-height: 40px;
 	letter-spacing: 0.14px;
 	color: #464646;
+}
+
+.sort-back_wrap,
+.paginator {
+	background-color: #ebebeb;
+}
+
+.button-sort {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: normal;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.button-sort:hover,
+.button-sort:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.button-sort: active {
+	color: #000000;
+}
+
+.active {
+	color: #000000;
 }
 
 .item-box span {

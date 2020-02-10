@@ -13,7 +13,6 @@
     <a class="logo-link" href="index.html">
       <img src="img/logo-device.svg" width="163" height="35" alt="Логотип компании Девайс">
     </a>
-
     <nav class="site-navigation">
       <div class="user-navigation_wrap">
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -33,7 +32,7 @@
 
         <ul>
           <li class="catalog-navigation"><a href="#">Каталог товаров</a></li>
-            <ul>
+            <ul class="sub-menu">
               <li><a href="inner-1.html">Виртуальная реальность</a></li>
               <li><a href="inner.html">Моноподы для селфи</a></li>
               <li><a href="inner-3.html">Экшн-камеры</a></li>
@@ -116,16 +115,18 @@
       </section>
 
       <section class="items">
-        <h3 class="items-title">Сортировка</h3>
-        <ul class="sort-back">
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По популярности</button></li>
-          <li>
-            <button class="up" type="button">Стрелка вверх</button>
-            <button class="down" type="button">Стрелка вниз</button>
-          </li>
-        </ul>
+        <div class="sort-back_wrap">
+          <h3 class="filter-title">Сортировка</h3>
+          <ul class="sort-back">
+            <li><button class=" active button-sort" type="button">По цене</button></li>
+            <li><button class="button-sort" type="button">По типу</button></li>
+            <li><button class="button-sort" type="button">По популярности</button></li>
+            <li>
+              <button class="arrow-up" type="button">Стрелка вверх</button>
+              <button class="arrow-down" type="button">Стрелка вниз</button>
+            </li>
+          </ul>
+        </div>
 
         <ul class="item">
           <li class="item-1">
@@ -179,13 +180,13 @@
       </section>
     
       <div class="paginator">
-        <button type="button">Назад</button>
+        <button class="back" type="button">Назад</button>
         <ul>
-          <li><button type="button">1</button></li>
-          <li><button type="button">2</button></li>
-          <li><button type="button">3</button></li>
+          <li><button class="page1" type="button">1</button></li>
+          <li><button class="page2" type="button">2</button></li>
+          <li><button class="page3" type="button">3</button></li>
         </ul>
-        <button type="button">Вперёд</button>
+        <button class="next" type="button">Вперёд</button>
       </div>
     </section>
   </main>
