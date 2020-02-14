@@ -24,7 +24,7 @@ body {
 	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 2em;
 	letter-spacing: 0.15px;
 
 	color: #000000;
@@ -41,38 +41,65 @@ img {max-width: 100%;}
 	font-family: "Gilroy";
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 24px;
+	line-height: 1.3em;
 	letter-spacing: 3.6px;
+	text-align: center;
 	text-transform: uppercase;
 	border: 0;
 
 	color: #000000;
 	background-color: #ffffff;
-	background-image: linear-gradient(transparent 35%, #f0c52e 35%, 
-					#f0c52e 65%, transparent 65%);
+	background-image: linear-gradient(transparent 35%, #f0c52e 35%, #f0c52e 65%, transparent 65%);
 }
 
-.button-state:hover,
-.button-state:focus {
+.button:hover,
+.button:focus {
 	background-color: #f0c52e;
 }
 
-.button-state:active {
+.button:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.slider-links .button-state:active {
+.slider-items .button {
+	display: block;
+	width: 220px;
+}
+
+.about_us .button {  /*не понимаю, эта кнопка не принимает нужную ширину*/
+	display: block;
+	width: 260px;
+}
+
+.contacts .button {
+	width: 260px;
+}
+
+.slider2-links .button {
+	width: 160px;
+}
+
+.slider2-links .button:active {
+	width: 278px;
+	padding-right: 133px;
+
 	color: #f7e184;
 	background-color: #000000;
 	background-image: none;
+}
+
+.filter .button,
+.items .button {
+	width: 200px;
 }
 
 .button-compare {
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
-	line-height: 36px;
+	line-height: 2.8em;
 	letter-spacing: 0.13px;
+
 	color: rgba(0, 0, 0, 0.5);
 }
 
@@ -85,9 +112,87 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.2);
 }
 
-.page-header {
+/*.body_wrap {
+	width: 1440px;
+}*/
+
+.page-header .logo,
+.page-header .logo-link {
+	position: relative;
+	left: 199px;
+	top: 24px;
+}
+
+.site-navigation {
 	width: 1160px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-right: 61px;
+
 	background-color: rgba(240, 197, 46, 0.5); 
+}
+
+.site-navigation a {
+	display: block;
+}
+
+.user-navigation_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-navigation {
+	width: 560px;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-navigation_wrap {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.service-navigation {
+	width: 560px;
+	display: flex;
+	justify-content: space-between;
+}
+
+ .search label::before {
+	content: url("../img/search.svg");
+	padding-right: 7px;
+}
+
+.user-navigation a.user::before {
+	content: url("../img/user.svg");
+	padding-right: 7px;
+}
+
+.user-navigation a.compare::before {
+	content: url("../img/compare.svg");
+	padding-right: 7px;
+}
+
+.user-navigation a.cart::before {
+	content: url("../img/cart.svg");
+	padding-right: 7px;
+}
+
+.user-navigation a.user::before:hover,
+.user-navigation a.user::before:focus,
+.user-navigation a.compare::before:hover,
+.user-navigation a.compare::before:focus,
+.user-navigation a.cart::before:hover,
+.user-navigation a.cart::before:focus {
+	opacity: 0.6;
+}
+
+.user-navigation a.user::before:active,
+.user-navigation a.compare::before:active,
+.user-navigation a.cart::before:active {
+	opacity: 0.3;
 }
 
 .site-navigation ul {
@@ -98,9 +203,13 @@ img {max-width: 100%;}
 	color: #000000;
 }
 
-.sub-menu a {
-	line-height: 36px;
+.sub-menu {
+	background-color: #f7e296;
 	display: none;
+}
+
+.sub-menu a {
+	line-height: 2.4em;	
 }
 
 .catalog-navigation > a,
@@ -108,7 +217,7 @@ img {max-width: 100%;}
 	font-family: "Gilroy";
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 24px;
+	line-height: 1.3em;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
 }
@@ -118,7 +227,7 @@ img {max-width: 100%;}
 .logo-link:hover,
 .logo-link:focus,
 .logo-html:hover,
-.logo-html:focus{
+.logo-html:focus {
 	opacity: 0.6;
 }
 
@@ -133,7 +242,7 @@ img {max-width: 100%;}
 	font-family: "Gilroy";
 	font-size: 47px;
 	font-weight: 800;
-	line-height: 48px;
+	line-height: 1em;
 	letter-spacing: 0.47px;
 }
 
@@ -141,7 +250,7 @@ h2.slider-title {
 	font-family: "Gilroy";
 	font-size: 179px;
 	font-weight: 800;
-	line-height: 179px;
+	line-height: 1em;
 	letter-spacing: 1.79px;
 	/*color: #ffffff;*/
 }
@@ -150,7 +259,7 @@ p.slider-slogan {
 	font-family: "Gilroy";
 	font-size: 47px;
 	font-weight: 800;
-	line-height: 56px;
+	line-height: 1.2em;
 	letter-spacing: 0.47px;
 }
 
@@ -158,7 +267,7 @@ p.slider-slogan {
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
-	line-height: 20px;
+	line-height: 1.5em;
 	letter-spacing: 0.13px;
 }
 
@@ -166,26 +275,112 @@ p.slider-slogan {
 	font-family: "Gilroy";
 	font-size: 36px;
 	font-weight: 300;
-	line-height: 48px;
+	line-height: 1.3em;
 	letter-spacing: 0.36px;
+}
+
+.main-catalog ul {
+	width: 1160px;
+	padding-left: 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-catalog li {
+	width: 160px;
+}
+
+.main-catalog .inner-box {
+	height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.inner-box:hover,
+.inner-box:focus {
+	background-color: #f0c52e;
+}
+
+.inner-box > img:active {
+	opacity: 0.3;
 }
 
 .slider2-services {
 	padding-left: 0;
 }
 
-.slider2-delivery,
-.slider2-warranty,
-.slider2-credit {
-	width: 1360px;
+.slider2_wrap {
+	height: 288px;
 	background-color: #e5e5e5;
+}
+
+.slider2-delivery {
+	background-image: url("../img/delivery.svg");
+	background-repeat: no-repeat;
+	background-position: 85% 0;
+}
+
+.slider2-warranty {
+	background-image: url("../img/warranty.svg");
+	background-repeat: no-repeat;
+	background-position: 85% 0;
+}
+
+.slider2-credit {
+	background-image: url("../img/credit.svg");
+	background-repeat: no-repeat;
+	background-position: 85% 0;
+}
+
+.cooperation_wrap ul {
+	width: 1160px;
+	padding-left: 140px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-DJI img:hover {
+	background-image: url("../img/logo-1-jpg.jpg");
+}
+
+.logo-Gadgets img:hover {
+	background-image: url("../img/logo-2-jpg.jpg");
+}
+
+.logo-GoPro img:hover {
+	background-image: url("../img/logo-3-jpg.jpg");
+}
+
+.logo-VIVE img:hover {
+	background-image: url("../img/logo-4-jpg.jpg");
+}
+
+.columns_wrap {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+
+ul.about_us-partner {
+	padding-left: 0;
+}
+
+.about_us-partner li::before {
+	content: url("../img/slider-button-empty.svg");
+	padding-right: 10px;
 }
 
 .about_us-partner {
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
-	line-height: 40px;
+	line-height: 2.5em;
+
+	color: #000000;
 }
 
 .main-catalog h3,
@@ -194,8 +389,9 @@ p.slider-slogan {
 	font-family: "Gilroy";
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 24px;
+	line-height: 1.3em;
 	letter-spacing: 0.18px;
+
 	color: #000000;
 }
 
@@ -204,8 +400,9 @@ p.slider-slogan {
 	font-family: "Open Sans";
 	font-size: 14px;
 	font-weight: 300;
-	line-height: 24px;
+	line-height: 1.7em;
 	letter-spacing: 0.14px;
+
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -223,12 +420,22 @@ p.slider-slogan {
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
-	line-height: 24px;
+	line-height: 1.5em;
 	letter-spacing: 3.2px;
 }
 
 .filter {
 	background-color: #ebebeb;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	width: 201px;
+	border-top: 2px solid #000000;
+	
 }
 
 input[type=checkbox],         /*где заблокированная??? не понимаю, в стайлгайде есть*/
@@ -292,8 +499,9 @@ input[type=radio]:not(:checked):active + label::before {
 	font-family: "Open Sans";
 	font-size: 14px;
 	font-weight: 300;
-	line-height: 40px;
+	line-height: 2.9em;
 	letter-spacing: 0.14px;
+
 	color: #464646;
 }
 
@@ -302,34 +510,58 @@ input[type=radio]:not(:checked):active + label::before {
 	background-color: #ebebeb;
 }
 
-.button-sort {
+.sort-back .button-sort {
 	font-family: "Open Sans";
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 18px;
+	line-height: 1.3em;
 	letter-spacing: normal;
+
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.button-sort:hover,
-.button-sort:focus {
+.sort-back .button-sort:hover,
+.sort-back .button-sort:focus {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.button-sort: active {
+.sort-back .button-sort:active {
 	color: #000000;
 }
 
-.active {
+.sort-back .active {
 	color: #000000;
+}
+
+.arrow-up::before {
+	content: url("../img/icon-up-dir.svg");
+	opacity: 0.2;
+}
+
+.arrow-down::before {
+	content: url("../img/icon-down-dir.svg");
+}
+
+.arrow-up:hover::before,
+.arrow-up:focus::before, 
+.arrow-down:hover::before,
+.arrow-down:focus::before {
+	opacity: 0.4;
+}
+
+.arrow-up:active::before, 
+.arrow-down:active::before {
+	color: #000000;
+	opacity: 1;
 }
 
 .item-box span {
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 24px;
+	line-height: 1.5em;
 	letter-spacing: 0.16px;
+	
 	color: #464646;
 }
 
@@ -340,6 +572,19 @@ input[type=radio]:not(:checked):active + label::before {
 
 .user-footer_wrap a {
 	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-navigation svg {
+	fill: #ffc600;
+}
+
+.user-navigation svg:hover,
+.user-navigation svg:focus {
+	opacity: 0.6;
+}
+
+.user-navigation svg:active {
+	opacity: 0.3;
 }
 
 .user-footer_wrap a:hover,
@@ -355,7 +600,7 @@ input[type=radio]:not(:checked):active + label::before {
 	font-family: "Gilroy";
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 24px;
+	line-height: 1.3em;
 	letter-spacing: 3.6px;
 	color: #ffffff;
 }
