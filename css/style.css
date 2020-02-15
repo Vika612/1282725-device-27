@@ -116,17 +116,22 @@ img {max-width: 100%;}
 	width: 1440px;
 }*/
 
+
 .page-header .logo,
 .page-header .logo-link {
-	position: relative;
-	left: 199px;
-	top: 24px;
+	position: absolute;
+	left: 90px;
+	top: 20px;
+	z-index: 1;
 }
 
 .site-navigation {
+	position: relative;
 	width: 1160px;
 	margin: 0 auto;
+	margin-top: 40px;
 	padding-top: 50px;
+	padding-left: 60px;
 	padding-right: 61px;
 
 	background-color: rgba(240, 197, 46, 0.5); 
@@ -160,7 +165,7 @@ img {max-width: 100%;}
 	justify-content: space-between;
 }
 
- .search label::before {
+.search label::before {
 	content: url("../img/search.svg");
 	padding-right: 7px;
 }
