@@ -443,7 +443,7 @@ legend {
 	
 }
 
-input[type=checkbox],         /*где заблокированная??? не понимаю, в стайлгайде есть*/
+input[type=checkbox],        
 input[type=radio] {
 	display: none;
 }
@@ -461,6 +461,10 @@ input[type=checkbox]:checked:active + label::before {
 	content: url("../img/checkbox-off.svg");
 }
 
+input[type=checkbox]:checked:disabled + label::before {
+	opacity: 0.25;
+}
+
 input[type=checkbox]:not(:checked) + label::before {
 	content: url("../img/checkbox-off.svg"); 
 }
@@ -472,6 +476,10 @@ input[type=checkbox]:not(:checked):focus + label::before {
 
 input[type=checkbox]:not(:checked):active + label::before {
 	content: url("../img/checkbox-on.svg");
+}
+
+input[type=checkbox]:not(:checked):disabled + label::before {
+	opacity: 0.25;
 }
 
 input[type=radio]:checked + label::before {
@@ -487,6 +495,10 @@ input[type=radio]:checked:active + label::before {
 	content: url("../img/radio-off.svg");
 }
 
+input[type=radio]:checked:disabled + label::before {
+	opacity: 0.25;
+}
+
 input[type=radio]:not(:checked) + label::before {
 	content: url("../img/radio-off.svg");
 }
@@ -498,6 +510,10 @@ input[type=radio]:not(:checked):focus + label::before {
 
 input[type=radio]:not(:checked):active + label::before {
 	content: url("../img/radio-on.svg");
+}
+
+input[type=radio]:not(:checked):disabled + label::before {
+	opacity: 0.25;
 }
 
 .filter label {
@@ -570,6 +586,53 @@ input[type=radio]:not(:checked):active + label::before {
 	color: #464646;
 }
 
+.paginator {
+	width: 700px;
+	display: flex; 
+	justify-content: space-between;
+}
+
+.paginator button {
+	text-transform: uppercase;
+	border: none;
+}
+
+ul.pages {
+	padding: 0;
+	display: flex;
+}
+
+.pages li:nth-child(2) {
+	padding: 0 25px;
+}
+
+.pages button {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pages button:hover,
+.pages button:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pages button:active,
+.pages .active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.button-flip {
+	padding: 0 30px;
+}
+
+.button-flip:hover,
+.button-flip:focus {
+	background-color: #d6d6d6;
+}
+
+.button-flip:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .page-footer {
 	color: #ffffff;
 	background-color: #464646;
@@ -592,6 +655,11 @@ input[type=radio]:not(:checked):active + label::before {
 	opacity: 0.3;
 }
 
+.user-footer_wrap {
+	display: flex;
+	justify-content: space-around;
+}
+
 .user-footer_wrap a:hover,
 .user-footer_wrap a:focus {
 	color: #ffffff;
@@ -599,6 +667,16 @@ input[type=radio]:not(:checked):active + label::before {
 
 .user-footer_wrap a:active {
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.service-footer_wrap {
+	display: flex;
+	justify-content: space-around;
+}
+
+.service-navigation-footer {
+	display: flex;
+	justify-content: space-between;
 }
 
 .service-navigation-footer a {
@@ -621,6 +699,16 @@ input[type=radio]:not(:checked):active + label::before {
 
 .phone a {
 	color: #ffffff;
+}
+
+.social_wrap {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
 }
 
 .social a:link {
