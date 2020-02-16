@@ -15,9 +15,9 @@
         </a>
     		<nav class="site-navigation">	
           <div class="user-navigation_wrap">
-      			<form class="search" action="https://echo.htmlacademy.ru" method="post">
+      			<form class="form-search" action="https://echo.htmlacademy.ru" method="post">
               <label for="search"></label>
-      				<input id="search" type="search" name="search" placeholder="Поиск по сайту...">
+      				<input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту...">
               <input class="search-button" type="submit" name="search-button" value="Найти">
     			  </form>
 
@@ -56,9 +56,9 @@
         <section class="slider">
           <h2 class="visually-hidden">Слайдер товаров</h2>
           <ul class="slider-links">
-            <li><button class="slider-button" type="button"></button></li>     
-            <li><button class="slider-button" type="button"></button></li>
-            <li><button class="slider-button" type="button"></button></li>
+            <li><button class="slider-button slider-button-on" type="button"></button></li>    
+            <li><button class="slider-button slider-button-empty" type="button"></button></li>
+            <li><button class="slider-button slider-button-empty" type="button"></button></li>
           </ul>
           
           <ul class="slider-items">
@@ -287,9 +287,9 @@
       				Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями
       			</p>
       			<ul class="about_us-partner">
-      				<li>Деловые Линии</li>
-      				<li>Автотрейдинг</li>
-      				<li>ЖелДорЭкспедиция</li>
+      				<li><span>Деловые Линии</span></li>
+      				<li><span>Автотрейдинг</span></li>
+      				<li><span>ЖелДорЭкспедиция</span></li>
       			</ul>
       			<a class="button" href="#">Подробнее о нас</a>
       		</section>
@@ -299,7 +299,7 @@
       			<p class="text">
       				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает
       			</p>
-      			<button type="button"><img src="img/map.png" width="560" height="222" alt="Адрес офиса: город Москва, улица Строителей, 15"></button>
+      			<button class="button-map" type="button"><img src="img/map.png" width="560" height="222" alt="Адрес офиса: город Москва, улица Строителей, 15"></button>
       			<button class="button write_us-btn" type="button">Напишите нам</button>
       		</section>
         </div>
