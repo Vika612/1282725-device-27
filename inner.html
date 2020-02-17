@@ -63,6 +63,7 @@
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
 
+      <div class="inner_wrap">
       <section class="filter">                 
         <h3 class="filter-title">Фильтр</h3>
 
@@ -78,23 +79,23 @@
           <fieldset class="filter-color">
             <legend>Цвет</legend>
               <p>
-                <input id="black" type="checkbox" name="black" checked>
+                <input class="visually-hidden" id="black" type="checkbox" name="black" checked>
                 <label for="black">Чёрный</label>
               </p>
               <p>
-                <input id="white" type="checkbox" name="white">
+                <input class="visually-hidden" id="white" type="checkbox" name="white">
                 <label for="white">Белый</label>
               </p>
               <p>
-                <input id="blue" type="checkbox" name="blue" checked>
+                <input class="visually-hidden" id="blue" type="checkbox" name="blue" checked>
                 <label for="blue">Синий</label>
               </p>
               <p>
-                <input id="red" type="checkbox" name="red" checked>
+                <input class="visually-hidden" id="red" type="checkbox" name="red" checked>
                 <label for="red">Красный</label>
               </p>
               <p>
-                <input id="pink" type="checkbox" name="pink">
+                <input class="visually-hidden" id="pink" type="checkbox" name="pink">
                 <label for="pink">Розовый</label>
               </p>
           </fieldset>
@@ -102,11 +103,11 @@
           <fieldset class="bluetooth">
             <legend>Bluetooth</legend>
               <p>
-                <input id="yes" type="radio" name="bluetooth" checked >
+                <input class="visually-hidden" id="yes" type="radio" name="bluetooth" checked >
                 <label for="yes">Есть</label>
               </p>
               <p>
-                <input id="no" type="radio" name="bluetooth">
+                <input class="visually-hidden" id="no" type="radio" name="bluetooth">
                 <label for="no">Нет</label>
               </p>
           </fieldset>
@@ -178,7 +179,8 @@
           </li>
         </ul>
       </section>
-    
+      </div>
+
       <div class="paginator">
         <button class="button-flip back" type="button">Назад</button>
         <ul class="pages">

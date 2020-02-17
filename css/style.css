@@ -17,6 +17,10 @@ html {
 	box-sizing: border-box;
 }
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -37,6 +41,17 @@ img {max-width: 100%;}
 .feedback a {text-decoration: none;}
 .feedback p {margin-bottom: 0;}
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0 );
+	overflow: hidden;
+}
+
 .button {
 	font-family: "Gilroy";
 	font-size: 18px;
@@ -50,6 +65,7 @@ img {max-width: 100%;}
 	color: #000000;
 	background-color: transparent;
 	background-image: linear-gradient(transparent 35%, #f0c52e 35%, #f0c52e 65%, transparent 65%);
+	transition: 1.5s;
 }
 
 .button:hover,
@@ -67,7 +83,7 @@ img {max-width: 100%;}
 	width: 220px;
 }
 
-.about_us .button {  /*не понимаю, эта кнопка не принимает нужную ширину*/
+.about_us .button {  
 	display: block;
 	width: 260px;
 }
@@ -114,15 +130,10 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.2);
 }
 
-/*.body_wrap {
-	width: 1440px;
-}*/
-
-
 .page-header .logo,
 .page-header .logo-link {
 	position: absolute;
-	left: 90px;
+	left: 155px;
 	top: 20px;
 	z-index: 1;
 }
@@ -139,8 +150,28 @@ img {max-width: 100%;}
 	background-color: rgba(240, 197, 46, 0.5); 
 }
 
+.site-navigation ul {
+	padding-left: 0;
+}
+
 .site-navigation a {
-	display: block;
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.logo-link:hover,
+.logo-link:focus,
+.logo-html:hover,
+.logo-html:focus {
+	opacity: 0.6;
+}
+
+.site-navigation a:active,
+.site-navigation a:active,
+.logo-link:active,
+.logo-html:active {
+	opacity: 0.3;
 }
 
 .user-navigation_wrap {
@@ -153,12 +184,14 @@ img {max-width: 100%;}
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .menu-navigation_wrap {
 	padding-top: 50px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .service-navigation {
@@ -257,23 +290,6 @@ img {max-width: 100%;}
 	opacity: 0.3;
 }
 
-.site-navigation ul {
-	padding-left: 0;
-}
-
-.site-navigation a {
-	color: #000000;
-}
-
-.sub-menu {
-	background-color: #f7e296;
-	display: none;
-}
-
-.sub-menu a {
-	line-height: 2.4em;	
-}
-
 .catalog-navigation > a,
 .service-navigation a {
 	font-family: "Gilroy";
@@ -282,6 +298,7 @@ img {max-width: 100%;}
 	line-height: 1.3em;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
+	padding-bottom: 40px;
 }
 
 .catalog-navigation a::after {
@@ -290,20 +307,23 @@ img {max-width: 100%;}
 	padding-left: 15px;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.logo-link:hover,
-.logo-link:focus,
-.logo-html:hover,
-.logo-html:focus {
-	opacity: 0.6;
+.sub-menu {
+	left: 0;
+	top: 0;
+	max-height: 129px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	background-color: #f7e296;
+	/*display: none;*/
 }
 
-.site-navigation a:active,
-.site-navigation a:active,
-.logo-link:active,
-.logo-html:active {
-	opacity: 0.3;
+.sub-menu a {
+	padding: 0;
+	padding-right: 45px;
+	line-height: 2.4em;	
 }
 
 .page-main h2 {
@@ -331,21 +351,34 @@ img {max-width: 100%;}
 	content: url("../img/slider-button-empty.svg");
 }
 
+.slider-item-1,
+.slider-item-2,
+.slider-item-3 {
+	display: flex;
+}
+
 h2.slider-title {
+	margin: 0;
 	font-family: "Gilroy";
 	font-size: 179px;
 	font-weight: 800;
 	line-height: 1em;
 	letter-spacing: 1.79px;
+
 	/*color: #ffffff;*/
 }
 
 p.slider-slogan {
+	margin: 0;
 	font-family: "Gilroy";
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 1.2em;
 	letter-spacing: 0.47px;
+}
+
+.slider-desc li {
+	display: inline-block;
 }
 
 .slider-desc dt {
@@ -505,6 +538,10 @@ ul.about_us-partner {
 	color: rgba(0, 0, 0, 0.1);
 }
 
+.inner_wrap {
+	display: flex;
+}
+
 .filter-title,
 .paginator button {
 	font-family: "Gilroy";
@@ -528,13 +565,9 @@ legend {
 	
 }
 
-input[type=checkbox],        
-input[type=radio] {
-	display: none;
-}
-
 input[type=checkbox]:checked + label::before {
 	content: url("../img/checkbox-on.svg");
+	padding-right: 13px;
 }
 
 input[type=checkbox]:checked:hover + label::before,
@@ -545,6 +578,7 @@ input[type=checkbox]:checked:focus + label::before {
 
 input[type=checkbox]:checked:active + label::before {
 	content: url("../img/checkbox-off.svg");
+	padding-right: 13px;
 }
 
 input[type=checkbox]:checked:disabled + label::before {
@@ -553,6 +587,7 @@ input[type=checkbox]:checked:disabled + label::before {
 
 input[type=checkbox]:not(:checked) + label::before {
 	content: url("../img/checkbox-off.svg"); 
+	padding-right: 13px;
 }
 
 input[type=checkbox]:not(:checked):hover + label::before,
@@ -563,6 +598,7 @@ input[type=checkbox]:not(:checked):focus + label::before {
 
 input[type=checkbox]:not(:checked):active + label::before {
 	content: url("../img/checkbox-on.svg");
+	padding-right: 13px;
 }
 
 input[type=checkbox]:not(:checked):disabled + label::before {
@@ -571,6 +607,7 @@ input[type=checkbox]:not(:checked):disabled + label::before {
 
 input[type=radio]:checked + label::before {
 	content: url("../img/radio-on.svg");
+	padding-right: 13px;
 }
 
 input[type=radio]:checked:hover + label::before,
@@ -581,6 +618,7 @@ input[type=radio]:checked:focus + label::before {
 
 input[type=radio]:checked:active + label::before {
 	content: url("../img/radio-off.svg");
+	padding-right: 13px;
 }
 
 input[type=radio]:checked:disabled + label::before {
@@ -589,6 +627,7 @@ input[type=radio]:checked:disabled + label::before {
 
 input[type=radio]:not(:checked) + label::before {
 	content: url("../img/radio-off.svg");
+	padding-right: 13px;
 }
 
 input[type=radio]:not(:checked):hover + label::before,
@@ -599,6 +638,7 @@ input[type=radio]:not(:checked):focus + label::before {
 
 input[type=radio]:not(:checked):active + label::before {
 	content: url("../img/radio-on.svg");
+	padding-right: 13px;
 }
 
 input[type=radio]:not(:checked):disabled + label::before {
@@ -827,7 +867,6 @@ ul.pages {
 	opacity: 0.1;
 }
 
-.visually-hidden { display: none;}
 
 .modal {display: none;}
 
