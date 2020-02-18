@@ -9,42 +9,46 @@
   </head>
   <body>
     	<header class="page-header feedback">
-        <a class="logo">
-          <img src="img/logo-device.svg" width="163" height="35" alt="логотип компании Девайс">
-        </a>
-    		<nav class="site-navigation">	
-          <div class="user-navigation_wrap">
-      			<form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-              <label for="search"></label>
-      				<input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту...">
-              <input class="search-button" type="submit" name="search-button" value="Найти">
-    			  </form>
+    		<nav class="site-navigation_wrap">	
+          <a class="logo">
+            <img src="img/logo-device.svg" width="163" height="35" alt="логотип компании Девайс">
+          </a>
+          <div class="site-navigation">
+            <div class="user-navigation_wrap">
+        			<form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+                <label for="search"></label>
+        				<input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту...">
+                <input class="search-button" type="submit" name="search-button" value="Найти">
+      			  </form>
 
-            <ul class="user-navigation">
-              <li><a class="user" href="login.html">Войти</a></li>
-              <li><a class="compare" href="#">Сравнить</a></li>
-              <li><a class="cart" href="#">Корзина</a></li>
-            </ul>
-  			   </div>
+              <ul class="user-navigation">
+                <li><a class="user" href="login.html">Войти</a></li>
+                <li><a class="compare" href="#">Сравнить</a></li>
+                <li><a class="cart" href="#">Корзина</a></li>
+              </ul>
+    			   </div>
 
-           <div class="menu-navigation_wrap">
-    				<ul>
-              <li class="catalog-navigation"><a href="#">Каталог товаров</a></li>
-                <ul class="sub-menu">
-          				<li><a href="inner-1.html">Виртуальная реальность</a></li>
-          				<li><a href="inner.html">Моноподы для селфи</a></li>
-          				<li><a href="inner-3.html">Экшн-камеры</a></li>
-          				<li><a href="inner-4.html">Фитнес-браслеты</a></li>
-          				<li><a href="inner-5.html">Умные часы</a></li>
-          				<li><a href="inner-6.html">Квадрокоптеры</a></li>
-                </ul>
-    				</ul>
+             <div class="menu-navigation_wrap">
+      				<ul>
+                <li class="catalog-navigation"><a href="#">Каталог товаров</a></li>
+                  <div class="sub-menu_wrap">
+                    <ul class="sub-menu">
+              				<li><a href="#">Виртуальная реальность</a></li>
+              				<li><a href="inner.html">Моноподы для селфи</a></li>
+              				<li><a href="#">Экшн-камеры</a></li>
+              				<li><a href="#">Фитнес-браслеты</a></li>
+              				<li><a href="#">Умные часы</a></li>
+              				<li><a href="#">Квадрокоптеры</a></li>
+                    </ul>
+                  </div>
+      				</ul>
 
-            <ul class="service-navigation">
-      				<li><a href="delivery.html">Доставка</a></li>
-      				<li><a href="warranty.html">Гарантия</a></li>
-      				<li><a href="contacts.html">Контакты</a></li>
-      			</ul>
+              <ul class="service-navigation">
+        				<li><a href="delivery.html">Доставка</a></li>
+        				<li><a href="warranty.html">Гарантия</a></li>
+        				<li><a href="contacts.html">Контакты</a></li>
+        			</ul>
+            </div>
           </div>
       	</nav>
       </header>
@@ -366,6 +370,7 @@
    
        <section class="modal modal-write_us">
           <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal_wrap">
             <p>
               <label for="fullname">Ваше имя:</label>
               <input id="fullname" type="text" name="fullname" placeholder="Имя Фамилия">
@@ -378,14 +383,15 @@
               <label for="message">Текст письма:</label>
               <textarea id="message" type="text" name="message" placeholder="В свободной форме"></textarea>
             </p>
+            </div>
             <button class="button" type="submit">Отправить</button>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
           </form>
         </section>
 
         <section class="modal modal-map">
           <figure>
-            <figcaption>Большая карта</figcaption>
+            <figcaption class="visually-hidden">Большая карта в отдельном окне</figcaption>
             <img src="img/map-big.png" width="960" height="559" alt="Адрес офиса: город Москва, улица Строителей, 15">
             <button class="modal-close" type="button">Закрыть</button>
           </figure>
