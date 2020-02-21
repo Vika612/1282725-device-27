@@ -30,7 +30,7 @@
 
              <div class="menu-navigation_wrap">
       				<ul>
-                <li class="catalog-navigation"><a href="#">Каталог товаров</a></li>
+                <li class="catalog-navigation"><a href="#">Каталог товаров</a>
                   <div class="sub-menu_wrap">
                     <ul class="sub-menu">
               				<li><a href="#">Виртуальная реальность</a></li>
@@ -40,13 +40,14 @@
               				<li><a href="#">Умные часы</a></li>
               				<li><a href="#">Квадрокоптеры</a></li>
                     </ul>
-                  </div>
+                 </div>
+                </li>
       				</ul>
 
               <ul class="service-navigation">
-        				<li><a href="delivery.html">Доставка</a></li>
-        				<li><a href="warranty.html">Гарантия</a></li>
-        				<li><a href="contacts.html">Контакты</a></li>
+        				<li><a href="#">Доставка</a></li>
+        				<li><a href="#">Гарантия</a></li>
+        				<li><a href="#">Контакты</a></li>
         			</ul>
             </div>
           </div>
@@ -160,56 +161,68 @@
         <section class="main-catalog">
           <ul>
             <li>
-              <a href="inner-1.html">
-                <div class="inner-box">
-                  <img src="img/popular-1.svg" width="97" height="55" aria-hidden="true" alt="Виртуальная реальность">
+              <a href="#">
+                <div class="inner-box_wrap">
+                  <div class="inner-box">
+                    <img src="img/popular-1.svg" width="97" height="55" aria-hidden="true" alt="Виртуальная реальность">
+                  </div>
+                  <h3>Виртуальная реальность</h3>
                 </div>
-                <h3>Виртуальная реальность</h3>
               </a>
             </li>
             
             <li>
               <a href="inner.html">
-                <div class="inner-box">
-                  <img src="img/popular-2.svg" width="86" height="117" aria-hidden="true" alt="Моноподы для селфи">
+                <div class="inner-box_wrap">
+                  <div class="inner-box">
+                    <img class="inner-img" src="img/popular-2.svg" width="86" height="117" aria-hidden="true" alt="Моноподы для селфи">
+                  </div>
+                  <h3>Моноподы для селфи</h3>
                 </div>
-                <h3>Моноподы для селфи</h3>
               </a>
             </li>
             
             <li>
-              <a href="inner-3.html">
-                <div class="inner-box">
-                  <img src="img/popular-3.svg" width="71" height="87" aria-hidden="true" alt="Экшн-камеры">
+              <a href="#">
+                <div class="inner-box_wrap">
+                  <div class="inner-box">
+                    <img src="img/popular-3.svg" width="71" height="87" aria-hidden="true" alt="Экшн-камеры">
+                  </div>
+                  <h3>Экшн-камеры</h3>
                 </div>
-                <h3>Экшн-камеры</h3>
               </a>
             </li>
            
             <li>
-              <a href="inner-4.html">
-                <div class="inner-box">
-                  <img src="img/popular-4.svg" width="107" height="65" aria-hidden="true" alt="Фитнес-браслеты">
+              <a href="#">
+                <div class="inner-box_wrap">
+                  <div class="inner-box">
+                    <img src="img/popular-4.svg" width="107" height="65" aria-hidden="true" alt="Фитнес-браслеты">
+                  </div>
+                  <h3>Фитнес-браслеты</h3>
                 </div>
-                <h3>Фитнес-браслеты</h3>
               </a>
             </li>
             
             <li>
-              <a href="inner-5.html">
-                <div class="inner-box">
-                  <img src="img/popular-5.svg" width="56" height="98" aria-hidden="true" alt="Умные часы">
+              <a href="#">
+                <div class="inner-box_wrap">
+                  <div class="inner-box">
+                    <img src="img/popular-5.svg" width="56" height="98" aria-hidden="true" alt="Умные часы">
+                  </div>
+                  <h3>Умные часы</h3>
                 </div>
-                <h3>Умные часы</h3>
               </a>
             </li>
             
             <li>
-              <a href="inner-6.html">
-                <div class="inner-box">
-                  <img src="img/popular-6.svg" width="132" height="69" aria-hidden="true" alt="Квадрокоптеры">
+              <a href="#">
+                <div class="inner-box_wrap">
+                  <div class="inner-box">
+                    <img src="img/popular-6.svg" width="132" height="69" aria-hidden="true" alt="Квадрокоптеры">
+                  </div>
+                  <h3>Квадрокоптеры</h3>
                 </div>
-                <h3>Квадрокоптеры</h3>
               </a>
             </li>
           </ul>
@@ -282,8 +295,8 @@
     		</section>
 
         <div class="columns_wrap">
-      		<section class="abous_us">
-      			<h2 class="about_us-title">О нас</h2>
+      		<section class="about_us">
+      			<h2 class="title about_us-title">О нас</h2>
       			<p class="text">
       				Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас
       			</p>
@@ -299,7 +312,7 @@
       		</section>
 
       		<section class="contacts">
-      			<h2 class="contacts-title">Контакты</h2>
+      			<h2 class="title contacts-title">Контакты</h2>
       			<p class="text">
       				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает
       			</p>
@@ -369,21 +382,19 @@
    <!--Windows Modal-->
    
        <section class="modal modal-write_us">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="modal_wrap">
-            <p>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="modal-item">
               <label for="fullname">Ваше имя:</label>
               <input id="fullname" type="text" name="fullname" placeholder="Имя Фамилия">
             </p>
-            <p>
+            <p class="modal-item">
               <label for="mail">Ваш e-mail:</label>
               <input id="mail" type="email" name="mail" placeholder="email@example.com">
             </p>
-            <p>
+            <p class="modal-item">
               <label for="message">Текст письма:</label>
-              <textarea id="message" type="text" name="message" placeholder="В свободной форме"></textarea>
+              <textarea id="message" type="text" name="message" rows="7" placeholder="В свободной форме"></textarea>
             </p>
-            </div>
             <button class="button" type="submit">Отправить</button>
             <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
           </form>

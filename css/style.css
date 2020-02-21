@@ -52,6 +52,8 @@ img {max-width: 100%;}
 	overflow: hidden;
 }
 
+/*кнопки с градиентом*/
+
 .button {
 	font-family: "Gilroy";
 	font-size: 18px;
@@ -110,6 +112,8 @@ img {max-width: 100%;}
 	width: 200px;
 }
 
+/*кнопка карточки товара*/
+
 .button-compare {
 	font-family: "Open Sans";
 	font-size: 13px;
@@ -130,6 +134,8 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.2);
 }
 
+/*логотип header*/
+
 .page-header .logo,
 .page-header .logo-link {
 	position: absolute;
@@ -138,16 +144,23 @@ img {max-width: 100%;}
 	z-index: 1;
 }
 
+/*главное меню*/
+
 .site-navigation_wrap {
 	position: relative;
 	width: 1160px;
+	height: 299px;
 	margin: 0 auto;
 	margin-top: 40px;
-	padding-top: 50px;
+	padding-top: 45px;
 	padding-left: 60px;
-	padding-right: 61px;
+	padding-right: 60px;
 
 	background-color: rgba(240, 197, 46, 0.5); 
+}
+
+.site-navigation_inner {
+	height: 186px;
 }
 
 .site-navigation ul {
@@ -179,26 +192,25 @@ img {max-width: 100%;}
 	justify-content: space-between;
 }
 
-.user-navigation {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 560px;
-	margin: 0;
-}
-
 .menu-navigation_wrap {
+	margin-top: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 50px;
 }
 
 .service-navigation {
+	width: 510px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 560px;
 }
+
+.service-navigation li:nth-child(3) {
+	padding-left: 75px;
+}
+
+/*форма поиска*/
 
 .form-search label::before {
 	content: url("../img/search.svg");
@@ -252,6 +264,21 @@ img {max-width: 100%;}
 	color: rgba(255, 255, 255, 0.3);
 }
 
+/*подменю пользователь*/
+
+.user-navigation {
+	width: 510px;
+	margin: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.user-navigation .user {
+	padding-right: 190px;
+}
+
 .user-navigation .exit {
 	padding: 0;
 	border: none;
@@ -260,23 +287,26 @@ img {max-width: 100%;}
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation a.user::before {
+.user-navigation a.user::before,
+.user-navigation a.user-active::before{
 	content: url("../img/user.svg");
-	padding-right: 7px;
+	padding-right: 10px;
 }
 
 .user-navigation a.compare::before {
 	content: url("../img/compare.svg");
-	padding-right: 7px;
+	padding-right: 10px;
 }
 
 .user-navigation a.cart::before {
 	content: url("../img/cart.svg");
-	padding-right: 7px;
+	padding-right: 10px;
 }
 
 .user-navigation a.user::before:hover,
 .user-navigation a.user::before:focus,
+.user-navigation a.user-active::before:hover,
+.user-navigation a.user-active::before:focus,
 .user-navigation a.compare::before:hover,
 .user-navigation a.compare::before:focus,
 .user-navigation a.cart::before:hover,
@@ -285,34 +315,49 @@ img {max-width: 100%;}
 }
 
 .user-navigation a.user::before:active,
+.user-navigation a.user-active::before:active,
 .user-navigation a.compare::before:active,
 .user-navigation a.cart::before:active {
 	opacity: 0.3;
 }
 
+/*подменю каталог товаров*/
+
 .catalog-navigation > a,
 .service-navigation a {
+	padding-bottom: 40px;
+
 	font-family: "Gilroy";
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.3em;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
-	padding-bottom: 40px;
 }
 
-.catalog-navigation a::after {
+.catalog-navigation > a::after {
 	content: url("../img/plus.svg");
 	opacity: 0.3;
 	padding-left: 15px;
 }
 
+/*выпадающее контекстное меню*/
+
+.catalog-navigation  {
+	position: relative;
+}
+
+.catalog-navigation:hover .sub-menu_wrap {
+	display: flex;
+}
+
 .sub-menu_wrap {
 	position: absolute;
-	left: 0;
-	width: 100%;
-	margin: 0;
-	padding: 20px 60px 35px;
+	left: -60px;
+
+	width: 1160px;
+	padding: 20px 60px 30px;
+	display: none;
 
 	background-color: #f7e296;
 }
@@ -322,13 +367,16 @@ img {max-width: 100%;}
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: flex-start;
+
 	width: 650px;
 	height: 110px;
+	
+	background-color: #f7e296;
 }
 
 .sub-menu li {
 	width: 185px;
-	margin-right: 50px;
+	margin-right: 55px;
 }
 
 .sub-menu li:last-child {
@@ -340,7 +388,12 @@ img {max-width: 100%;}
 	line-height: 2.4em;	
 }
 
+/*главный контент*/
+
 .page-main h2 {
+	padding: 0;
+	margin: 0;
+
 	font-family: "Gilroy";
 	font-size: 47px;
 	font-weight: 800;
@@ -348,14 +401,16 @@ img {max-width: 100%;}
 	letter-spacing: 0.47px;
 }
 
+/*слайдер хит-товаров*/
+
 .slider-links li {
 	display: inline-block;
 }
 
 .slider-button {
 	border: none;
-	background-color: transparent;
 	cursor: pointer;
+	background-color: transparent;
 }
 
 .slider-button-on::before {
@@ -412,6 +467,13 @@ p.slider-slogan {
 	letter-spacing: 0.36px;
 }
 
+.slider-item-2,
+.slider-item-3 {
+	display: none;
+}
+
+/*главный каталог*/
+
 .main-catalog ul {
 	width: 1160px;
 	padding-left: 0;
@@ -433,14 +495,21 @@ p.slider-slogan {
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
+.main-catalog .inner-img {
+	align-self: flex-end;
+}
+
 .inner-box:hover,
 .inner-box:focus {
 	background-color: #f0c52e;
 }
 
+.inner-box_wrap:active,
 .inner-box > img:active {
 	opacity: 0.3;
 }
+
+/*слайдер дополнительный сервис*/
 
 .slider2-services {
 	padding-left: 0;
@@ -469,10 +538,12 @@ p.slider-slogan {
 	background-position: 85% 0;
 }
 
+/*компании-партнеры*/
+
 .cooperation_wrap ul {
-	width: 1160px;
-	padding-left: 140px;
+	padding: 0 100px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -492,13 +563,34 @@ p.slider-slogan {
 	background-image: url("../img/logo-4-jpg.jpg");
 }
 
+/*информация о компании и контакты*/
+
 .columns_wrap {
-	width: 1160px;
-	margin: 0 auto;
+	padding: 50px 100px;
 	display: flex;
+	justify-content: space-between;
+}
+
+.columns_wrap .title {
+	margin-bottom: 50px;
+}
+
+.columns_wrap .text {
+	margin: 0;
+	padding-bottom: 30px;
+	color: #464646;
+}
+
+.about_us {
+	width: 480px;
+}
+
+.contacts {
+	width: 560px;
 }
 
 .about_us-partner span {
+	padding-left: 10px;
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
@@ -508,7 +600,9 @@ p.slider-slogan {
 }
 
 ul.about_us-partner {
-	padding-left: 0;
+	padding: 0;
+	padding-top: 20px;
+	margin-bottom: 65px;
 }
 
 .about_us-partner li {
@@ -517,8 +611,23 @@ ul.about_us-partner {
 }
 
 .contacts .button-map {
+	margin-top: 10px;
+	margin-bottom: 75px;
 	border: none;
 	cursor: pointer;
+}
+
+						/*Каталог*/
+
+.inner-title {
+	padding: 0;
+	margin: 0;
+
+	font-family: "Gilroy";
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 1em;
+	letter-spacing: 0.47px;
 }
 
 .main-catalog h3,
@@ -531,6 +640,23 @@ ul.about_us-partner {
 	letter-spacing: 0.18px;
 
 	color: #000000;
+}
+
+.breadcrumbs_wrap {
+	width: 1160px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-left: 60px;
+}
+
+.breadcrumbs {
+	padding: 0;
+	margin-top: 20px;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	margin-right: 35px;
 }
 
 .breadcrumbs a,
@@ -553,8 +679,11 @@ ul.about_us-partner {
 	color: rgba(0, 0, 0, 0.1);
 }
 
-.inner_wrap {
+							/*Фильтр*/
+
+.filter_wrap {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .filter-title,
@@ -566,7 +695,16 @@ ul.about_us-partner {
 	letter-spacing: 3.2px;
 }
 
+.filter-title {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 100px;
+	padding-left: 10px;
+}
+
 .filter {
+	margin-top: 30px;
+	padding: 30px 70px 500px 140px;
 	background-color: #ebebeb;
 }
 
@@ -671,6 +809,8 @@ input[type=radio]:not(:checked):disabled + label::before {
 	color: #464646;
 }
 
+							/*сортировка*/
+
 .sort-back_wrap,
 .paginator {
 	background-color: #ebebeb;
@@ -733,6 +873,8 @@ input[type=radio]:not(:checked):disabled + label::before {
 	color: #464646;
 }
 
+/*пагинация*/
+
 .paginator {
 	width: 700px;
 	display: flex; 
@@ -784,6 +926,8 @@ ul.pages {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+/*footer*/
+
 .page-footer {
 	color: #ffffff;
 	background-color: #464646;
@@ -792,6 +936,8 @@ ul.pages {
 .page-footer .exit {
 	color: rgba(255, 255, 255, 0.3);
 }
+
+/*подменю пользователь*/
 
 .user-footer_wrap a {
 	color: rgba(255, 255, 255, 0.7);
@@ -823,6 +969,8 @@ ul.pages {
 .user-footer_wrap a:active {
 	color: rgba(255, 255, 255, 0.3);
 }
+
+/*подменю сервис*/
 
 .service-footer_wrap {
 	display: flex;
@@ -859,6 +1007,8 @@ ul.pages {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+/*социальные сети*/
+
 .social_wrap {
 	display: flex;
 	justify-content: space-around;
@@ -882,13 +1032,14 @@ ul.pages {
 	opacity: 0.1;
 }
 
+/*модальные окна*/
+
 .modal {
 	position: fixed;
 	width: 960px;
 	color: #000000;
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-	display: none;
 }
 
 .modal-close {
@@ -905,16 +1056,107 @@ ul.pages {
 	opacity: 0.5;
 }
 
-.modal-write_us {
-	top: 120px;
-	left: 50%;
-	margin-left: -480px;
-	padding: 98px 100px 80px;
+.modal-close:hover::before,
+.modal-close:focus::before {
+	opacity: 1;
 }
 
-.modal_wrap {
-	display: flex;
+.modal-close:active::before {
+	opacity: 0.3;
 }
+
+.modal-write_us {
+	top: 50px;
+	left: 140px;
+
+	padding: 98px 100px 70px;
+	display: none;
+}
+
+.modal-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.modal-item label {
+	display: block;
+	padding: 0;
+	padding-bottom: 13px;
+	cursor: pointer;
+
+	font-family: "Gilroy";
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.3em;
+
+	color: #000000;
+}
+
+.modal-item input {
+	width: 360px;
+	height: 50px;
+}
+
+.modal-item input:invalid {
+	background-color: #f6dada;
+}
+
+.modal-item textarea {
+	width: 760px;
+	margin-bottom: 40px;
+}
+
+.modal-item input::placeholder,
+.modal-item textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.3;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-item input:focus::placeholder,
+.modal-item textarea:focus::placeholder {
+	color: #464646;
+}
+
+.modal-item input,
+.modal-item textarea {
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+
+	background-color: #f2f2f2;
+	opacity: 0.5;
+}
+
+.modal-item input:hover,
+.modal-item textarea:hover {
+	background-color: #eaeaea;
+}
+
+.modal-item input:focus,
+.modal-item textarea:focus {
+	outline-width: 3px;
+	outline-style: solid;
+	outline-color: #f0c52e;
+
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-map {
+	top: 50px;
+	left: 140px;
+
+	width: 960px;
+	height: 559px;
+	display: none;
+}
+
+.modal-map figure {
+	margin: 0;
+}
+
+
 
 
 
