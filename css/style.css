@@ -766,7 +766,7 @@ ul.about_us-partner {
 .filter-form {
 	width: 468px;
 	height: 100%;
-	padding: 70px 180px 550px 190px;
+	padding: 70px 180px 550px 190px;  /*не могу отрегулировать высоту*/
 	background-color: #ebebeb;
 }
 
