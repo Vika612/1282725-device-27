@@ -107,7 +107,6 @@ img {max-width: 100%;}
 	background-image: none;
 }
 
-.filter .button,
 .items .button {
 	width: 200px;
 }
@@ -448,29 +447,31 @@ p.slider-slogan {
 	letter-spacing: 0.47px;
 }
 
-.slider-desc li {
-	display: inline-block;
+.slider-table {
+	margin-top: 75px;
+	border-collapse: separate;
 }
 
-.slider-desc dt {
-	font-family: "Open Sans";
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 1.5em;
-	letter-spacing: 0.13px;
-}
-
-.slider-desc dd {
+.slider-table th {
+	padding: 0 80px 20px 0;
 	font-family: "Gilroy";
 	font-size: 36px;
 	font-weight: 300;
 	line-height: 1.3em;
 	letter-spacing: 0.36px;
+	text-align: left;
+
+	color: #000000;
 }
 
-.slider-item-2,
-.slider-item-3 {
-	display: none;
+.slider-table td {
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 1.5em;
+	letter-spacing: 0.13px;
+
+	color: #464646;
 }
 
 					/*главный каталог-ссылки*/
@@ -641,7 +642,11 @@ ul.about_us-partner {
 
 .page-footer {
 	position: relative;
+
+	max-width: 1440px;
+	margin: 0 auto;
 	padding: 65px 140px 45px;
+	
 	color: #ffffff;
 	background-color: #464646;
 }
@@ -793,6 +798,7 @@ ul.about_us-partner {
 	width: 1160px;
 	margin: 0 auto;
 	margin-top: 40px;
+	margin-bottom: 50px;
 	padding-left: 60px;
 }
 
@@ -827,103 +833,67 @@ ul.about_us-partner {
 }
 
 							/*Фильтр*/
-.filter_wrap {
-	margin-top: 40px;
+
+
+.main-inner_wrap {
+	max-width: 1440px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	background-image: 
+		linear-gradient(to right, #d9d9d9 33%, #eeeeee 33%),
+		linear-gradient(to right, #eeeeee 33%, transparent 33%);
+	background-repeat: no-repeat;
+	background-size: 
+		100% 70px,
+		100% 100%;
+	}
+
+.filter-form_wrap {
+	flex-basis: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.filter-form {
+	padding-left: 140px;
+	padding-right: 55px;
+	padding-top: 70px;
+	height: 100%;
+}
+
+.inner_wrap {
+	margin-left: -20px;
+	flex-basis: 67%;
+	display: flex;
+	flex-direction: column;
+}
+
+.items_wrap ul {
+	margin-top: 0;
+	padding-top: 70px;
+	padding-left: 65px;
+	padding-right: 65px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
-
-	background-color: #ebebeb;
 }
 
-.filter {
-	padding: 7px 180px 7px 200px;
-	background-color: #d9d9d9;
-}
 
-.filter-title,
-.paginator button {
+.filter-title {
+	padding: 10px;
+	padding-left: 150px;
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 1.5em;
 	letter-spacing: 3.2px;
 	text-transform: uppercase;
-}
-
-.sort-back_wrap {
-	width: 880px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.sort-back li {
-	margin-left: 15px;
-	display: inline-block;
-}
-
-.sort-back .button-sort {
-	border: none;
-	font-family: "Open Sans";
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.3em;
-	letter-spacing: normal;
-
-	background-color: transparent;
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.sort-back .button-sort:hover,
-.sort-back .button-sort:focus {
-	cursor: pointer;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.sort-back .button-sort:active {
-	color: #000000;
-}
-
-.sort-back .active {
-	color: #000000;
-}
-
-.arrow-up,
-.arrow-down {
-	border: none;
-	background-color: transparent;
-}
-
-.arrow-up::before {
-	content: url("../img/icon-up-dir.svg");
-	opacity: 0.2;
-}
-
-.arrow-down::before {
-	content: url("../img/icon-down-dir.svg");
-}
-
-.arrow-up:hover::before,
-.arrow-up:focus::before, 
-.arrow-down:hover::before,
-.arrow-down:focus::before {
-	cursor: pointer;
-	opacity: 0.4;
-}
-
-.arrow-up:active::before, 
-.arrow-down:active::before {
-	color: #000000;
-	opacity: 1;
-}
-
-.filter-form {
-	width: 468px;
-	height: 100%;
-	padding: 70px 180px 550px 190px;  
-	background-color: #ebebeb;
+	text-align: left;
 }
 
 fieldset {
@@ -932,6 +902,7 @@ fieldset {
 
 legend {
 	width: 201px;
+	padding-top: 15px;
 	border-top: 2px solid #000000;
 }
 
@@ -943,6 +914,11 @@ legend {
 	letter-spacing: 0.14px;
 	cursor: pointer;
 	color: #464646;
+}
+
+.filter-form .button {
+	width: 200px;
+	margin-top: 60px;
 }
 
 input[type=checkbox]:checked + label::before {
@@ -1025,6 +1001,76 @@ input[type=radio]:not(:checked):disabled + label::before {
 	opacity: 0.25;
 }
 
+					/*Сортировка*/
+
+.sort-back_wrap {
+	width: 880px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.sort-back li {
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.sort-back .button-sort {
+	border: none;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.3em;
+	letter-spacing: normal;
+
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-back .button-sort:hover,
+.sort-back .button-sort:focus {
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-back .button-sort:active {
+	color: #000000;
+}
+
+.sort-back .active {
+	color: #000000;
+}
+
+.arrow-up,
+.arrow-down {
+	border: none;
+	background-color: transparent;
+}
+
+.arrow-up::before {
+	content: url("../img/icon-up-dir.svg");
+	opacity: 0.2;
+}
+
+.arrow-down::before {
+	content: url("../img/icon-down-dir.svg");
+}
+
+.arrow-up:hover::before,
+.arrow-up:focus::before, 
+.arrow-down:hover::before,
+.arrow-down:focus::before {
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+.arrow-up:active::before, 
+.arrow-down:active::before {
+	color: #000000;
+	opacity: 1;
+}
+
+
 					/*Карточки товаров*/
 
 .item_wrap {
@@ -1047,7 +1093,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
+	z-index: 3;
 
 	background-color: rgba(238, 238, 238, 0.7);
 }
@@ -1089,17 +1135,27 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	width: 700px;
+	margin: -30px 65px 80px;
+
+	max-width: 100%;
 	display: flex; 
 	justify-content: space-between;
+
 	background-color: #ebebeb;
 }
 
 .paginator button {
+	font-family: "Gilroy";
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 1.5em;
+	letter-spacing: 3.2px;
 	text-transform: uppercase;
-	border: none;
-	background-color: transparent;
+
 	cursor: pointer;
+	border: none;
+
+	background-color: transparent;
 }
 
 ul.pages {

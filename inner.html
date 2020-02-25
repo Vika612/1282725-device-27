@@ -67,150 +67,142 @@
       </ul>
     </div>
 
-      <h2 class="visually-hidden">Каталог товаров</h2>
+    <div class="main-inner_wrap">
+      <section class="filter-form_wrap">                 
+        <h3 class="filter-title">Фильтр:</h3>
+        <form  class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-price">               
+            <legend>Стоимость</legend>  
+              <p>                    
+                <input id="price" type="range" name="price" min="0" max="2" step="1" value="1">
+                <label for="price"><span>от 0 до 5000</span></label> 
+              </p>
+          </fieldset>
+            
+          <fieldset class="filter-color">
+            <legend>Цвет</legend>
+              <p>
+                <input class="visually-hidden" id="black" type="checkbox" name="black" checked>
+                <label for="black">Чёрный</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="white" type="checkbox" name="white">
+                <label for="white">Белый</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="blue" type="checkbox" name="blue" checked>
+                <label for="blue">Синий</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="red" type="checkbox" name="red" checked>
+                <label for="red">Красный</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="pink" type="checkbox" name="pink">
+                <label for="pink">Розовый</label>
+              </p>
+          </fieldset>
 
-      <div class="filter_wrap">
-        <div class="filter">                 
-          <h3 class="filter-title">Фильтр:</h3>
-        </div>
+          <fieldset class="bluetooth">
+            <legend>Bluetooth</legend>
+              <p>
+                <input class="visually-hidden" id="yes" type="radio" name="bluetooth" checked >
+                <label for="yes">Есть</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="no" type="radio" name="bluetooth">
+                <label for="no">Нет</label>
+              </p>
+            </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </section>
 
+      <section class="inner_wrap">
         <div class="sort-back_wrap">
           <h3 class="filter-title">Сортировка:</h3>
-            <ul class="sort-back">
-              <li><button class="button-sort active" type="button">По цене</button></li>
-              <li><button class="button-sort" type="button">По типу</button></li>
-              <li><button class="button-sort" type="button">По популярности</button></li>
-              <li>
-                <button class="arrow-up" type="button"></button>
-                <button class="arrow-down active" type="button"></button>
-              </li>
-            </ul>
-          </div>
+          <ul class="sort-back">
+            <li><button class="button-sort active" type="button">По цене</button></li>
+            <li><button class="button-sort" type="button">По типу</button></li>
+            <li><button class="button-sort" type="button">По популярности</button></li>
+            <li>
+              <button class="arrow-up" type="button"></button>
+              <button class="arrow-down active" type="button"></button>
+            </li>
+          </ul>
         </div>
 
-        <div class="catalog_wrap">
-          <section class="filter-form">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="filter-price">               
-                <legend>Стоимость</legend>  
-                  <p>                    
-                    <input id="price" type="range" name="price" min="0" max="2" step="1" value="1">
-                    <label for="price"><span>от 0 до 5000</span></label> 
-                  </p>
-              </fieldset>
-            
-              <fieldset class="filter-color">
-                <legend>Цвет</legend>
-                  <p>
-                    <input class="visually-hidden" id="black" type="checkbox" name="black" checked>
-                    <label for="black">Чёрный</label>
-                  </p>
-                  <p>
-                    <input class="visually-hidden" id="white" type="checkbox" name="white">
-                    <label for="white">Белый</label>
-                  </p>
-                  <p>
-                    <input class="visually-hidden" id="blue" type="checkbox" name="blue" checked>
-                    <label for="blue">Синий</label>
-                  </p>
-                  <p>
-                    <input class="visually-hidden" id="red" type="checkbox" name="red" checked>
-                    <label for="red">Красный</label>
-                  </p>
-                  <p>
-                    <input class="visually-hidden" id="pink" type="checkbox" name="pink">
-                    <label for="pink">Розовый</label>
-                  </p>
-              </fieldset>
+        <div class="items_wrap">
+          <ul class="item">
+            <li class="item-1">
+              <div class="item_wrap">
+                <img src="img/shop-item-1.jpg" width="360" height="380" aria-hidden="true" alt="Любительская селфи-палка">
+                <div class="item-hover">
+                  <button class="button" type="button">В корзину</button>
+                  <button class="button-compare" type="button">Добавить к сравнению</button>
+                </div>
+              </div>
+              <div class="item-box">
+                <a href="#">Любительская селфи-палка</a>
+                <p>500 руб.</p>
+              </div>
+            </li>
 
-              <fieldset class="bluetooth">
-                <legend>Bluetooth</legend>
-                  <p>
-                    <input class="visually-hidden" id="yes" type="radio" name="bluetooth" checked >
-                    <label for="yes">Есть</label>
-                  </p>
-                  <p>
-                    <input class="visually-hidden" id="no" type="radio" name="bluetooth">
-                    <label for="no">Нет</label>
-                  </p>
-                </fieldset>
-                <button class="button" type="submit">Показать</button>
-              </form>
-            </section>
-          </div>
+            <li class="item-2">
+              <div class="item_wrap">
+                <img src="img/shop-item-2.jpg" width="360" height="380" aria-hidden="true" alt="Профессиональная селфи-палка">
+                <div class="item-hover">
+                  <button class="button" type="button">В корзину</button>
+                  <button class="button-compare" type="button">Добавить к сравнению</button>
+                </div>
+              </div>
+              <div class="item-box">
+                <a href="#">Профессиональная<br> селфи-палка</a>
+                <p>1 500 руб.</p>
+              </div>
+            </li>
 
-          <section class="items">
-            <ul class="item">
-              <li class="item-1">
-                <div class="item_wrap">
-                  <img src="img/shop-item-1.jpg" width="360" height="380" aria-hidden="true" alt="Любительская селфи-палка">
-                  <div class="item-hover">
-                    <button class="button" type="button">В корзину</button>
-                    <button class="button-compare" type="button">Добавить к сравнению</button>
-                  </div>
+            <li class="item-3">
+              <div class="item_wrap">
+                <img src="img/shop-item-3.jpg" width="360" height="380" aria-hidden="true" alt="Непотопляемая селфи-палка">
+                <div class="item-hover">
+                  <button class="button" type="button">В корзину</button>
+                  <button class="button-compare" type="button">Добавить к сравнению</button>
                 </div>
-                <div class="item-box">
-                  <a href="#">Любительская селфи-палка</a>
-                  <p>500 руб.</p>
-                </div>
-              </li>
+              </div>
+              <div class="item-box">
+                <a href="#">Непотопляемая селфи-палка</a>
+                <p>2 500 руб.</p>
+              </div>
+            </li>
 
-              <li class="item-2">
-                <div class="item_wrap">
-                  <img src="img/shop-item-2.jpg" width="360" height="380" aria-hidden="true" alt="Профессиональная селфи-палка">
-                  <div class="item-hover">
-                    <button class="button" type="button">В корзину</button>
-                    <button class="button-compare" type="button">Добавить к сравнению</button>
-                  </div>
+            <li class="item-4">
+              <div class="item_wrap">
+                <img src="img/shop-item-4.jpg" width="360" height="380" aria-hidden="true" alt="Селфи-палка «Следуй за мной»">
+                <div class="item-hover">
+                  <button class="button" type="button">В корзину</button>
+                  <button class="button-compare" type="button">Добавить к сравнению</button>
                 </div>
-                <div class="item-box">
-                  <a href="#">Профессиональная<br> селфи-палка</a>
-                  <p>1 500 руб.</p>
-                </div>
-              </li>
-
-              <li class="item-3">
-                <div class="item_wrap">
-                  <img src="img/shop-item-3.jpg" width="360" height="380" aria-hidden="true" alt="Непотопляемая селфи-палка">
-                  <div class="item-hover">
-                    <button class="button" type="button">В корзину</button>
-                    <button class="button-compare" type="button">Добавить к сравнению</button>
-                  </div>
-                </div>
-                <div class="item-box">
-                  <a href="#">Непотопляемая селфи-палка</a>
-                  <p>2 500 руб.</p>
-                </div>
-              </li>
-
-              <li class="item-4">
-                <div class="item_wrap">
-                  <img src="img/shop-item-4.jpg" width="360" height="380" aria-hidden="true" alt="Селфи-палка «Следуй за мной»">
-                  <div class="item-hover">
-                    <button class="button" type="button">В корзину</button>
-                    <button class="button-compare" type="button">Добавить к сравнению</button>
-                  </div>
-                </div>
-                <div class="item-box">
-                  <a href="#">Селфи-палка «Следуй за мной»</a>
-                  <p>4 900 руб.</p>
-                </div>
-              </li>
-            </ul>
-          </section>
+              </div>
+              <div class="item-box">
+                <a href="#">Селфи-палка «Следуй за мной»</a>
+                <p>4 900 руб.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-    
-
-      <div class="paginator">
-        <button class="button-flip back" type="button">Назад</button>
-        <ul class="pages">
-          <li><button class="active" type="button">1</button></li>
-          <li><button type="button">2</button></li>
-          <li><button type="button">3</button></li>
-        </ul>
-        <button class="button-flip next" type="button">Вперёд</button>
-      </div>
-    </section>
+        
+        <div class="paginator">
+          <button class="button-flip back" type="button">Назад</button>
+          <ul class="pages">
+            <li><button class="active" type="button">1</button></li>
+            <li><button type="button">2</button></li>
+            <li><button type="button">3</button></li>
+          </ul>
+          <button class="button-flip next" type="button">Вперёд</button>
+        </div>
+      </section>
+    </div>
   </main>
 
 
