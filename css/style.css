@@ -520,31 +520,66 @@ p.slider-slogan {
 
 					/*слайдер дополнительный сервис*/
 
-.slider2-services {
-	padding-left: 0;
+.slider2_wrap {
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: 55px;
+	margin-bottom: 90px;
+	padding-bottom: 70px;
+	display: flex;
+
+	background: linear-gradient(to bottom, #ffffff 20%, #e5e5e5 20%);
 }
 
-.slider2_wrap {
-	height: 288px;
-	background-color: #e5e5e5;
+.slider2-links {
+	width: 380px;
+	padding: 40px 140px 0 100px;
+	border-right: 7px solid #000000;
 }
+
+.slider2-links li {
+	padding-bottom: 40px;
+}
+
+.slider2-services {
+	padding-top: 30px;
+	padding-left: 100px;
+}
+
+.slider2-services p {
+	width: 435px;
+	padding-top: 20px;
+}
+
 
 .slider2-delivery {
-	background-image: url("../img/delivery.svg");
-	background-repeat: no-repeat;
-	background-position: 85% 0;
+	position: relative;
+}
+
+.slider2-delivery::after {
+	position: absolute;
+	top: 10px;
+	left: 550px;
+	
+	content: url("../img/delivery.svg");
 }
 
 .slider2-warranty {
-	background-image: url("../img/warranty.svg");
-	background-repeat: no-repeat;
-	background-position: 85% 0;
+	position: absolute;
+	top: 55px;
+	right: 270px;
+
+	content: url("../img/warranty.svg");
+	display: none;
 }
 
 .slider2-credit {
-	background-image: url("../img/credit.svg");
-	background-repeat: no-repeat;
-	background-position: 85% 0;
+	position: absolute;
+	top: 55px;
+	right: 270px;
+
+	content: url("../img/credit.svg");
+	display: none;
 }
 
 					/*компании-партнеры*/
