@@ -241,6 +241,7 @@ img {max-width: 100%;}
 
 .search:focus {
 	outline: none;
+	cursor: text;
 	border-bottom: 2px solid #000000;
 	color: #000000;
 	opacity: 1;
@@ -288,6 +289,12 @@ img {max-width: 100%;}
 	background-color: transparent;
 	color: rgba(0, 0, 0, 0.3);
 }
+
+.user-navigation .exit:hover,
+.user-navigation .exit:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
 
 .user-navigation a.user::before,
 .user-navigation a.user-active::before{
@@ -574,7 +581,7 @@ p.slider-slogan {
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 50px 100px;
+	padding: 50px 100px 100px;
 
 	display: flex;
 	justify-content: space-between;
@@ -632,7 +639,7 @@ ul.about_us-partner {
 
 .contacts .button-map {
 	margin-top: 10px;
-	margin-bottom: 75px;
+	margin-bottom: 70px;
 	border: none;
 	cursor: pointer;
 }
@@ -653,6 +660,11 @@ ul.about_us-partner {
 
 .page-footer .exit {
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer .exit:hover,
+.page-footer .exit:focus {
+	color: #ffffff;
 }
 
 					/*подменю пользователь*/
@@ -808,8 +820,13 @@ ul.about_us-partner {
 }
 
 .breadcrumbs li {
+	padding-right: 15px;
 	display: inline-block;
-	margin-right: 35px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+	content: url("../img/nav-arrow.svg");
+	padding-left: 15px;
 }
 
 .breadcrumbs a,
@@ -875,7 +892,9 @@ ul.about_us-partner {
 
 .items_wrap ul {
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-top: 70px;
+	padding-bottom: 0;
 	padding-left: 65px;
 	padding-right: 65px;
 	display: flex;
@@ -883,10 +902,8 @@ ul.about_us-partner {
 	justify-content: space-between;
 }
 
-
 .filter-title {
 	padding: 10px;
-	padding-left: 150px;
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
@@ -896,7 +913,13 @@ ul.about_us-partner {
 	text-align: left;
 }
 
+.filter-form_wrap .filter-title {
+	padding-left: 150px;
+}
+
 fieldset {
+	margin: 0;
+	padding: 0;
 	border: none;
 }
 
@@ -920,6 +943,90 @@ legend {
 	width: 200px;
 	margin-top: 60px;
 }
+
+					/*ползунок Стоимость*/
+
+.range-filter {
+	width: 200px;
+	padding-bottom: 20px;
+}
+
+.range-controls {
+	position: relative;
+	padding-top: 40px;
+
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+	width: 60%;
+	height: 2px;
+
+	background-color: #91c92f;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 0;
+
+	width: 20px;
+	height: 22px;
+	border: 9px solid #ffffff;
+	cursor: pointer;
+
+	background-color: #ababab;
+	border-radius: 50%;
+}
+
+.range-toggle .toggle-min {
+	left: 0;
+}
+
+.range-controls .toggle-max {
+	left: 110px;
+}
+
+.price-controls label,
+.price-controls input {
+	font-family: "Gilroy";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.7em;
+
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls label {
+	width: 40%;
+	padding: 0;
+	margin: 0;
+
+	display: inline-block;
+}
+
+.price-controls input {
+	width: 50px;
+	border: none;
+
+	background-color: transparent;
+}
+
+input[type="number"]::webkit-outer-spin-button,
+input[type="number"]::webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
 
 input[type=checkbox]:checked + label::before {
 	content: url("../img/checkbox-on.svg");
@@ -1004,16 +1111,24 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*Сортировка*/
 
 .sort-back_wrap {
-	width: 880px;
+	width: 780px;
+	margin: 0 auto;
+	margin-left: 55px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sort-back {
+	margin-right: 160px;
 }
 
 .sort-back li {
-	margin-left: 15px;
+	padding-right: 20px;
 	display: inline-block;
 }
+
 
 .sort-back .button-sort {
 	border: none;
@@ -1079,12 +1194,42 @@ input[type=radio]:not(:checked):disabled + label::before {
 	display: flex;
 }
 
+					/*label NEW*/
+
+.item-4 .item_wrap::before {
+	position: absolute;
+	top: 27px;
+	right: 27px;
+	z-index: 3;
+	content: "NEW";
+
+	width: 60px;
+	height: 60px;
+	padding-top: 17px;
+	padding-left: 13px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+
+	font-family: "Gilroy";
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.7em;
+	letter-spacing: 0.7px;
+
+	color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(205, 57, 68, 0.1);
+}
+
 .item_wrap:hover .item-hover {
 	display: flex;
 }
 
 .item-hover {
 	position: absolute;
+	top: 0;
+	left: 0;
 
 	width: 100%;
 	height: 100%;
@@ -1099,6 +1244,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 }
 
 .item-box {
+	position: relative;
 	width: 360px;
 	padding-top: 35px;
 	padding-bottom: 50px;
@@ -1135,7 +1281,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	margin: -30px 65px 80px;
+	margin: 0 65px 80px;
 
 	max-width: 100%;
 	display: flex; 
