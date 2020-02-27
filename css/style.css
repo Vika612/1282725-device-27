@@ -137,6 +137,7 @@ img {max-width: 100%;}
 
 .site-navigation_wrap {
 	position: relative;
+
 	width: 1160px;
 	height: 299px;
 	margin: 0 auto;
@@ -348,6 +349,7 @@ img {max-width: 100%;}
 .sub-menu_wrap {
 	position: absolute;
 	left: -60px;
+	z-index: 3;
 
 	width: 1160px;
 	padding: 20px 60px 30px;
@@ -357,13 +359,13 @@ img {max-width: 100%;}
 }
 
 .sub-menu {
+	width: 650px;
+	height: 110px;
+
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: flex-start;
-
-	width: 650px;
-	height: 110px;
 	
 	background-color: #f7e296;
 }
@@ -395,7 +397,19 @@ img {max-width: 100%;}
 	letter-spacing: 0.47px;
 }
 
-					/*слайдер хит-товаров*/
+					/*слайдер промо товаров*/
+.slider_wrap {
+	max-width: 1130px;
+	margin: 0 auto;
+	margin-top: -130px;
+	margin-bottom: 100px;
+	z-index: 1;
+}
+
+.slider-desc {
+	padding-top: 88px;
+	padding-left: 125px;
+}
 
 .slider-links li {
 	display: inline-block;
@@ -421,7 +435,7 @@ img {max-width: 100%;}
 	display: flex;
 }
 
-h2.slider-title {
+/*h2.slider-title {
 	margin: 0;
 	font-family: "Gilroy";
 	font-size: 179px;
@@ -429,8 +443,8 @@ h2.slider-title {
 	line-height: 1em;
 	letter-spacing: 1.79px;
 
-	/*color: #ffffff;*/
-}
+	color: #ffffff;
+}*/
 
 p.slider-slogan {
 	margin: 0;
@@ -466,6 +480,12 @@ p.slider-slogan {
 	letter-spacing: 0.13px;
 
 	color: #464646;
+}
+
+
+.slider-item-2,
+.slider-item-3 {
+	display: none;
 }
 
 					/*главный каталог-ссылки*/
