@@ -399,6 +399,7 @@ img {max-width: 100%;}
 
 					/*слайдер промо товаров*/
 .slider_wrap {
+	position: relative;
 	max-width: 1130px;
 	margin: 0 auto;
 	margin-top: -130px;
@@ -491,15 +492,19 @@ p.slider-slogan {
 					/*главный каталог-ссылки*/
 
 .main-catalog ul {
-	width: 1160px;
-	padding-left: 0;
+	max-width: 1160px;
 	margin: 0 auto;
+	padding-left: 0;
 	display: flex;
 	justify-content: space-between;
 }
 
 .main-catalog li {
 	width: 160px;
+}
+
+.main-catalog h3 {
+	padding-top: 16px;
 }
 
 .main-catalog .inner-box {
@@ -650,7 +655,7 @@ p.slider-slogan {
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 50px 100px 100px;
+	padding: 50px 95px 100px;
 
 	display: flex;
 	justify-content: space-between;
@@ -775,7 +780,7 @@ ul.about_us-partner {
 					/*подменю сервис*/
 
 .service-footer_wrap {
-	margin-top: 40px;
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
 }
