@@ -417,11 +417,25 @@ img {max-width: 100%;}
 	margin-left: 30px;
 }
 
+.slider-image-2 {
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+.slider-image-3 {
+	width: 526px;
+	margin-top: 65px;
+}
+
 .slider-desc {
 	max-width: 670px;
 	padding-top: 83px;
 	padding-left: 125px;
 	padding-right: 50px;
+}
+
+.slider-desc-3 {
+	padding-left: 47px;
 }
 
 .slider-slogan {
@@ -461,9 +475,7 @@ img {max-width: 100%;}
 	content: url("../img/slider-button-empty.svg");
 }
 
-.slider-item-1,
-.slider-item-2,
-.slider-item-3 {
+.slider-item {
 	display: flex;
 }
 
@@ -482,6 +494,11 @@ img {max-width: 100%;}
 	width: 510px;
 	margin-top: 60px;
 	border-collapse: separate;
+}
+
+.slider-table-3 {
+	width: 310px;
+	padding: 0;
 }
 
 .slider-table th {
@@ -507,8 +524,8 @@ img {max-width: 100%;}
 }
 
 
-.slider-item-2,
-.slider-item-3 {
+.slide-2,
+.slide-3 {
 	display: none;
 }
 
@@ -560,7 +577,7 @@ img {max-width: 100%;}
 	margin: 0 auto;
 	margin-top: 48px;
 	margin-bottom: 93px;
-	padding-bottom: 56px;
+	padding-bottom: 67px;
 	display: flex;
 
 	background: linear-gradient(to bottom, #ffffff 29%, #e5e5e5 29%);
@@ -568,12 +585,12 @@ img {max-width: 100%;}
 
 .slider2-links {
 	width: 380px;
-	padding: 80px 125px 29px 100px;
+	padding: 80px 125px 45px 100px;
 	border-right: 7px solid #000000;
 }
 
 .slider2-links li {
-	padding-bottom: 35px;
+	padding-bottom: 30px;
 }
 
 .slider2-links .button {
@@ -592,7 +609,7 @@ img {max-width: 100%;}
 }
 
 .slider2-services {
-	padding-top: 73px;
+	padding-top: 78px;
 	padding-left: 115px;
 }
 
@@ -660,7 +677,6 @@ img {max-width: 100%;}
 
 .logo-DJI img:hover {
 	background-image: url("../img/logo-1-jpg.jpg");
-	outline: 1px solid red;
 }
 
 .logo-Gadgets img:hover {
@@ -689,7 +705,7 @@ img {max-width: 100%;}
 
 .columns_wrap .title {
 	margin-top: 75px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 .columns_wrap .title::before {
@@ -738,11 +754,11 @@ ul.about_us-partner {
 }
 
 .about_us .button {
-	margin-top: 60px;
+	margin-top: 65px;
 }
 
 .contacts .button-map {
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-bottom: 70px;
 	border: none;
 	cursor: pointer;
@@ -779,11 +795,6 @@ ul.about_us-partner {
 	justify-content: space-between;
 }
 
-.page-footer .user-navigation {
-	width: 350px;
-	padding-left: 20px;
-}
-
 .user-footer_wrap a {
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -795,6 +806,11 @@ ul.about_us-partner {
 
 .user-footer_wrap a:active {
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer .user-navigation {
+	width: 350px;
+	padding-left: 20px;
 }
 
 .user-navigation svg {
@@ -809,6 +825,10 @@ ul.about_us-partner {
 
 .user-navigation svg:active {
 	opacity: 0.3;
+}
+
+.page-footer .user-navigation-inner {
+	width: 480px;
 }
 
 
