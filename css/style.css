@@ -182,21 +182,22 @@ img {max-width: 100%;}
 }
 
 .menu-navigation_wrap {
-	margin-top: 20px;
+	margin-top: 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .service-navigation {
-	width: 510px;
+	width: 500px;
+	padding-left: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .service-navigation li:nth-child(3) {
-	padding-left: 75px;
+	padding-left: 80px;
 }
 
 					/*форма поиска*/
@@ -257,7 +258,7 @@ img {max-width: 100%;}
 					/*подменю пользователь*/
 
 .user-navigation {
-	width: 510px;
+	width: 500px;
 	margin: 0;
 
 	display: flex;
@@ -535,9 +536,9 @@ p.slider-slogan {
 .slider2_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-top: 55px;
+	margin-top: 85px;
 	margin-bottom: 90px;
-	padding-bottom: 70px;
+	padding-bottom: 35px;
 	display: flex;
 
 	background: linear-gradient(to bottom, #ffffff 20%, #e5e5e5 20%);
@@ -545,7 +546,7 @@ p.slider-slogan {
 
 .slider2-links {
 	width: 380px;
-	padding: 40px 140px 0 100px;
+	padding: 40px 125px 40px 100px;
 	border-right: 7px solid #000000;
 }
 
@@ -560,6 +561,7 @@ p.slider-slogan {
 .slider2-links .button-active,
 .slider2-links .button:active {
 	width: 278px;
+	padding: 7px;
 	padding-right: 133px;
 
 	color: #f7e184;
@@ -569,7 +571,7 @@ p.slider-slogan {
 
 .slider2-services {
 	padding-top: 30px;
-	padding-left: 100px;
+	padding-left: 115px;
 }
 
 .slider2-services p {
@@ -586,7 +588,7 @@ p.slider-slogan {
 .slider2-delivery::after {
 	position: absolute;
 	top: 10px;
-	left: 550px;
+	left: 555px;
 	
 	content: url("../img/delivery.svg");
 	/*display: none;*/
@@ -626,6 +628,7 @@ p.slider-slogan {
 .cooperation_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
+	margin-bottom: 12px;
 	padding: 0 100px;
 
 	display: flex;
@@ -655,7 +658,7 @@ p.slider-slogan {
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 50px 95px 100px;
+	padding: 50px 85px 90px;
 
 	display: flex;
 	justify-content: space-between;
@@ -677,13 +680,14 @@ p.slider-slogan {
 
 .columns_wrap .text {
 	margin: 0;
-	padding-bottom: 30px;
+	padding-bottom: 27px;
 
 	color: #464646;
 }
 
 .about_us {
 	width: 480px;
+	margin-right: 140px;
 }
 
 .contacts {
@@ -702,13 +706,16 @@ p.slider-slogan {
 
 ul.about_us-partner {
 	padding: 0;
-	padding-top: 20px;
-	margin-bottom: 65px;
+	padding-top: 30px;
 }
 
 .about_us-partner li {
 	list-style: circle inside;
 	color: #e5e5e5;
+}
+
+.about_us .button {
+	margin-top: 60px;
 }
 
 .contacts .button-map {
@@ -726,7 +733,7 @@ ul.about_us-partner {
 
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 65px 140px 45px;
+	padding: 65px 100px 45px;
 	
 	color: #ffffff;
 	background-color: #464646;
@@ -747,6 +754,11 @@ ul.about_us-partner {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.page-footer .user-navigation {
+	width: 350px;
+	outline: 1px solid gold;
 }
 
 .user-footer_wrap a {
@@ -786,6 +798,7 @@ ul.about_us-partner {
 }
 
 .service-navigation-footer {
+	padding: 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -820,20 +833,23 @@ ul.about_us-partner {
 
 .social_wrap {
 	margin-top: 50px;
+
 	display: flex;
 	justify-content: space-between;
 }
 
 .yellow-line {
-	margin-top: 10px;
 	width: 80px;
 	height: 7px;
+	margin-top: 10px;
+
 	background-color: #ffc600;
 }
 
 .social {
-	margin-top: 0;
-	padding: 0;
+	margin: 0;
+	margin-right: 75px;
+
 	display: flex;
 	justify-content: space-between;
 }
