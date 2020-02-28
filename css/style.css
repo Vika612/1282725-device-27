@@ -197,7 +197,7 @@ img {max-width: 100%;}
 }
 
 .service-navigation li:nth-child(3) {
-	padding-left: 80px;
+	padding-left: 60px;
 }
 
 					/*форма поиска*/
@@ -401,16 +401,47 @@ img {max-width: 100%;}
 					/*слайдер промо товаров*/
 .slider_wrap {
 	position: relative;
+	z-index: 1;
+
 	max-width: 1130px;
 	margin: 0 auto;
 	margin-top: -130px;
-	margin-bottom: 100px;
-	z-index: 1;
+	margin-bottom: 97px;
+	padding: 0;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.slider-image {
+	padding: 0 25px;
+	margin: 0 5px;
 }
 
 .slider-desc {
-	padding-top: 88px;
-	padding-left: 125px;
+	max-width: 670px;
+	padding-top: 83px;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.slider-slogan {
+	margin: 0;
+	font-family: "Gilroy";
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 1.2em;
+	letter-spacing: 0.47px;
+}
+
+.slider-text {
+	padding-bottom: 55px;
+}
+
+.slider-links {
+	position: absolute;
+	top: 325px;
+	right: 100px;
 }
 
 .slider-links li {
@@ -448,22 +479,14 @@ img {max-width: 100%;}
 	color: #ffffff;
 }*/
 
-p.slider-slogan {
-	margin: 0;
-	font-family: "Gilroy";
-	font-size: 47px;
-	font-weight: 800;
-	line-height: 1.2em;
-	letter-spacing: 0.47px;
-}
-
 .slider-table {
-	margin-top: 75px;
+	width: 510px;
+	margin-top: 60px;
 	border-collapse: separate;
 }
 
 .slider-table th {
-	padding: 0 80px 20px 0;
+	padding: 0 60px 20px 0;
 	font-family: "Gilroy";
 	font-size: 36px;
 	font-weight: 300;
@@ -536,7 +559,7 @@ p.slider-slogan {
 .slider2_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-top: 85px;
+	margin-top: 50px;
 	margin-bottom: 90px;
 	padding-bottom: 35px;
 	display: flex;
@@ -561,7 +584,7 @@ p.slider-slogan {
 .slider2-links .button-active,
 .slider2-links .button:active {
 	width: 278px;
-	padding: 7px;
+	padding: 10px;
 	padding-right: 133px;
 
 	color: #f7e184;
@@ -758,7 +781,7 @@ ul.about_us-partner {
 
 .page-footer .user-navigation {
 	width: 350px;
-	outline: 1px solid gold;
+	padding-left: 20px;
 }
 
 .user-footer_wrap a {
