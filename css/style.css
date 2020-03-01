@@ -196,7 +196,7 @@ img {max-width: 100%;}
 }
 
 .service-navigation li:nth-child(3) {
-	padding-left: 70px;
+	padding-left: 75px;
 }
 
 					/*форма поиска*/
@@ -270,7 +270,8 @@ img {max-width: 100%;}
 }
 
 .user-navigation .exit {
-	padding: 0;
+	margin-right: 20px;
+
 	border: none;
 	cursor: pointer;
 
@@ -700,7 +701,7 @@ img {max-width: 100%;}
 .cooperation_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	padding: 0 100px;
 
 	display: flex;
@@ -737,7 +738,7 @@ img {max-width: 100%;}
 }
 
 .columns_wrap .title {
-	margin-top: 85px;
+	margin-top: 80px;
 	margin-bottom: 45px;
 }
 
@@ -824,6 +825,8 @@ ul.about_us-partner {
 					/*подменю пользователь*/
 
 .user-footer_wrap {
+	max-width: 1440px;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -844,7 +847,7 @@ ul.about_us-partner {
 
 .page-footer .user-navigation {
 	width: 350px;
-	padding-left: 20px;
+	padding-left: 33px;
 }
 
 .user-navigation svg {
@@ -862,7 +865,7 @@ ul.about_us-partner {
 }
 
 .page-footer .user-navigation-inner {
-	width: 480px;
+	width: 500px;
 }
 
 
@@ -878,6 +881,7 @@ ul.about_us-partner {
 	padding: 0;
 	padding-left: 23px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -930,7 +934,7 @@ ul.about_us-partner {
 
 .social {
 	margin: 0;
-	margin-right: 250px;
+	margin-right: 57px;
 
 	display: flex;
 	justify-content: space-between;
@@ -982,7 +986,7 @@ ul.about_us-partner {
 	width: 1160px;
 	margin: 0 auto;
 	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 	padding-left: 60px;
 }
 
@@ -1364,9 +1368,13 @@ input[type=radio]:not(:checked):disabled + label::before {
 	position: relative;
 
 	width: 360px;
+	margin-right: 20px;
+	margin-left: 8px;
 	display: flex;
 	flex-wrap: wrap;
 }
+
+
 
 					/*label NEW*/
 
@@ -1420,8 +1428,10 @@ input[type=radio]:not(:checked):disabled + label::before {
 .item-box {
 	position: relative;
 	width: 360px;
-	padding-top: 35px;
-	padding-bottom: 50px;
+	margin-left: 8px;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	padding-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1455,7 +1465,8 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	margin: 0 65px 80px;
+	margin: 0 83px 80px  72px;
+	padding: 6px 0;
 
 	max-width: 100%;
 	display: flex; 
