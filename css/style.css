@@ -701,7 +701,7 @@ img {max-width: 100%;}
 .cooperation_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-bottom: 7px;
+	margin-bottom: 5px;
 	padding: 0 100px;
 
 	display: flex;
@@ -738,8 +738,8 @@ img {max-width: 100%;}
 }
 
 .columns_wrap .title {
-	margin-top: 80px;
-	margin-bottom: 45px;
+	margin-top: 83px;
+	margin-bottom: 43px;
 }
 
 .columns_wrap .title::before {
@@ -753,7 +753,7 @@ img {max-width: 100%;}
 
 .columns_wrap .text {
 	margin: 0;
-	padding-bottom: 27px;
+	padding-bottom: 25px;
 
 	color: #464646;
 }
@@ -779,7 +779,7 @@ img {max-width: 100%;}
 
 ul.about_us-partner {
 	padding: 0;
-	padding-top: 30px;
+	padding-top: 32px;
 }
 
 .about_us-partner li {
@@ -917,7 +917,7 @@ ul.about_us-partner {
 					/*социальные сети*/
 
 .social_wrap {
-	margin-top: 50px;
+	margin-top: 47px;
 
 	display: flex;
 	justify-content: space-between;
@@ -1041,7 +1041,7 @@ ul.about_us-partner {
 
 .filter-form_wrap {
 	padding-top: 0;
-	flex-basis: 32%;	
+	flex-basis: 31%;	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1049,12 +1049,12 @@ ul.about_us-partner {
 
 .filter-form {
 	height: 100%;
-	padding: 75px 35px 0 160px;
+	padding: 70px 35px 0 157px;
 	background: #ebebeb;
 }
 
 .inner_wrap {
-	flex-basis: 68%;
+	flex-basis: 69%;
 	display: flex;
 	flex-direction: column;
 }
@@ -1081,8 +1081,8 @@ ul.item {
 
 .filter-form_wrap .filter-title {
 	margin-bottom: 0;
-	padding: 21px;
-	padding-left: 160px;
+	padding: 23px;
+	padding-left: 157px;
 
 	background-color: #d9d9d9;
 }
@@ -1095,8 +1095,13 @@ fieldset {
 
 legend {
 	width: 201px;
-	padding-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	border-top: 2px solid #000000;
+}
+
+.filter-price legend {
+	padding-bottom: 0;
 }
 
 .filter-form label {
@@ -1106,19 +1111,20 @@ legend {
 	line-height: 2.9em;
 	letter-spacing: 0.14px;
 	cursor: pointer;
+
 	color: #464646;
 }
 
 .filter-form .button {
 	width: 200px;
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 					/*ползунок Стоимость*/
 
 .range-filter {
 	width: 200px;
-	padding-bottom: 20px;
+	padding-bottom: 32px;
 }
 
 .range-controls {
@@ -1197,6 +1203,16 @@ input[type="number"] {
 	-moz-appearance: textfield;
 }
 
+.filter-color {
+	padding-bottom: 30px;
+}
+
+.filter-color p,
+.bluetooth p {
+	margin: 0;
+	padding: 0;
+
+}
 
 input[type=checkbox]:checked + label::before {
 	content: url("../img/checkbox-on.svg");
@@ -1211,7 +1227,7 @@ input[type=checkbox]:checked:focus + label::before {
 
 input[type=checkbox]:checked:active + label::before {
 	content: url("../img/checkbox-off.svg");
-	padding-right: 13px;
+	padding-right: 14px;
 }
 
 input[type=checkbox]:checked:disabled + label::before {
@@ -1220,7 +1236,7 @@ input[type=checkbox]:checked:disabled + label::before {
 
 input[type=checkbox]:not(:checked) + label::before {
 	content: url("../img/checkbox-off.svg"); 
-	padding-right: 13px;
+	padding-right: 14px;
 }
 
 input[type=checkbox]:not(:checked):hover + label::before,
@@ -1260,7 +1276,7 @@ input[type=radio]:checked:disabled + label::before {
 
 input[type=radio]:not(:checked) + label::before {
 	content: url("../img/radio-off.svg");
-	padding-right: 13px;
+	padding-right: 14px;
 }
 
 input[type=radio]:not(:checked):hover + label::before,
@@ -1271,7 +1287,7 @@ input[type=radio]:not(:checked):focus + label::before {
 
 input[type=radio]:not(:checked):active + label::before {
 	content: url("../img/radio-on.svg");
-	padding-right: 13px;
+	padding-right: 14px;
 }
 
 input[type=radio]:not(:checked):disabled + label::before {
@@ -1285,7 +1301,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 16px;
-	padding: 0 60px;
+	padding: 2px 85px 2px 70px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1296,7 +1312,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 }
 
 .sort-back {
-	margin-right: 160px;
+	margin-right: 190px;
 }
 
 .sort-back li {
@@ -1368,7 +1384,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	position: relative;
 
 	width: 360px;
-	margin-right: 20px;
+	margin-right: 28px;
 	margin-left: 8px;
 	display: flex;
 	flex-wrap: wrap;
@@ -1431,7 +1447,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	margin-left: 8px;
 	margin-bottom: 10px;
 	padding-top: 30px;
-	padding-bottom: 40px;
+	padding-bottom: 35px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1465,7 +1481,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	margin: 0 83px 80px  72px;
+	margin: 0 83px 95px  72px;
 	padding: 6px 0;
 
 	max-width: 100%;
