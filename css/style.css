@@ -406,7 +406,7 @@ img {max-width: 100%;}
 	max-width: 1130px;
 	margin: 0 auto;
 	margin-top: -130px;
-	margin-bottom: 80px;
+	margin-bottom: 85px;
 	padding: 0;
 
 	display: flex;
@@ -613,7 +613,7 @@ img {max-width: 100%;}
 	max-width: 1440px;
 	margin: 0 auto;
 	margin-top: 50px;
-	margin-bottom: 93px;
+	margin-bottom: 90px;
 	padding-bottom: 55px;
 	display: flex;
 
@@ -1689,7 +1689,7 @@ ul.pages {
 .modal-map iframe {
 	position: relative;
 	z-index: 3;
-	border: 0;
+	border: none;
 }
 
 .modal-map img {
