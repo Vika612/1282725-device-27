@@ -620,13 +620,12 @@ img {max-width: 100%;}
 
 	display: flex;
 
-	background: linear-gradient(to bottom, #ffffff 29%, #e5e5e5 29%);
+	background: linear-gradient(to bottom, #ffffff 28%, #e5e5e5 28%);
 }
 
 .slider2-links {
 	width: 425px;
-	padding: 76px 90px 45px 140px;
-
+	padding: 76px 90px 45px 140px;	
 	border-right: 7px solid #000000;
 }
 
@@ -642,8 +641,7 @@ img {max-width: 100%;}
 	width: 160px;
 }
 
-.slider2-links .button-active,
-.slider2-links .button:active {
+.slider2-links .button:active { 
 	width: 278px;
 	padding: 9px;
 	padding-right: 135px;
@@ -652,6 +650,19 @@ img {max-width: 100%;}
 	color: #f7e184;
 	background-color: #000000;
 	background-image: none;
+}
+
+.slider2-links .button-active {
+	width: 278px;
+	padding: 9px;
+	padding-right: 135px;
+	padding-left: 17px;
+
+	color: #f7e184;
+	background-color: #000000;
+	background-image: none;
+
+	/* visibility: hidden;    */
 }
 
 .slider2-services {
@@ -667,7 +678,7 @@ img {max-width: 100%;}
 
 .slider2-delivery {
 	position: relative;
-	/*display: none;*/
+	/* display: none;     */
 }
 
 .slider2-delivery::after {
@@ -676,12 +687,12 @@ img {max-width: 100%;}
 	left: 555px;
 	
 	content: url("../img/delivery.svg");
-	/*display: none;*/
+	/* display: none;   */
 }
 
 .slider2-warranty {
 	position: relative;
-	display: none;
+	display: none;    
 }
 
 .slider2-warranty::after {
@@ -690,13 +701,12 @@ img {max-width: 100%;}
 	left: 540px;
 
 	content: url("../img/warranty.svg");
-	display: none;
-	
+	display: none;  
 }
 
 .slider2-credit {
 	position: relative;
-	display: none;
+	display: none;  
 }
 
 .slider2-credit::after {
@@ -705,7 +715,7 @@ img {max-width: 100%;}
 	left: 530px;
 
 	content: url("../img/credit.svg");
-	display: none;
+	display: none;  
 }
 
 					/*компании-партнеры*/
@@ -1180,6 +1190,11 @@ legend {
 	border-radius: 50%;
 }
 
+.range-controls .toggle:hover {
+	width: 22px;
+	height: 24px;
+}
+
 .range-toggle .toggle-min {
 	left: 0;
 }
@@ -1506,8 +1521,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 .paginator {
 	max-width: 100%;
 	margin: 0 140px 80px  72px;
-	padding: 0;
-	padding-top: 5px;
+	padding: 2px 0;
 
 	display: flex; 
 	justify-content: space-between;
