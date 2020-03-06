@@ -1,4 +1,4 @@
-@font-face {
+@font-face { 
 	font-family: "Gilroy";
 	src: url("../fonts/web/gilroyextrabold.woff2") format("woff2");
 	src: url("../fonts/web/gilroyextrabold.woff") format("woff"); 
@@ -7,8 +7,8 @@
 }
 @font-face {
 	font-family: "Gilroy";
-	src: url("../fonts/gilroylight.woff2") format("woff2");
-	src: url("../fonts/gilroylight.woff") format("woff");
+	src: url("../fonts/web/gilroylight.woff2") format("woff2");
+	src: url("../fonts/web/gilroylight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
@@ -274,8 +274,6 @@ img {max-width: 100%;}
 }
 
 .user-navigation .exit {
-	margin-right: 20px;
-
 	border: none;
 	cursor: pointer;
 
@@ -292,7 +290,7 @@ img {max-width: 100%;}
 .user-navigation a.user::before,
 .user-navigation a.user-active::before{
 	content: url("../img/user.svg");
-	padding-right: 8px;
+	padding-right: 10px;
 }
 
 .user-navigation a.compare::before {
@@ -715,7 +713,7 @@ img {max-width: 100%;}
 .cooperation_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-bottom: 7px;
+	margin-bottom: 9px;
 	padding: 0 120px;
 
 	display: flex;
@@ -745,7 +743,7 @@ img {max-width: 100%;}
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 47px 142px 87px 138px;
+	padding: 47px 142px 86px 138px;
 	
 	display: flex;
 	justify-content: space-between;
@@ -861,7 +859,7 @@ ul.about_us-partner {
 
 .page-footer .user-navigation {
 	width: 350px;
-	padding-left: 25px;
+	padding-left: 23px;
 }
 
 .user-navigation li {
@@ -905,7 +903,7 @@ ul.about_us-partner {
 }
 
 .service-navigation-footer a {
-	margin-right: 33px;
+	margin-right: 32px;
 
 	font-family: "Gilroy";
 	font-size: 18px;
@@ -1049,19 +1047,20 @@ ul.about_us-partner {
 
 .main-inner_wrap {
 	max-width: 1440px;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 0;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;                                                                                          
+	justify-content: space-around;                                                                                           
 }
 
 
 .filter-form_wrap {
 	padding-top: 0;
 
-	flex-basis: 31%;	
+	flex-basis: 32.5%;	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1069,19 +1068,20 @@ ul.about_us-partner {
 
 .filter-form {
 	height: 100%;
-	padding: 70px 35px 0 152px;
+	padding: 70px 35px 0 200px;
 	background: #ebebeb;
 }
 
 .inner_wrap {
-	flex-basis: 69%;
+	flex-basis: 67.5%;
 	display: flex;
 	flex-direction: column;
 }
 
 ul.item {
 	margin: 0;
-	padding: 70px 65px 0;
+	padding: 70px 73px 0;
+	padding-right: 105px;;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1102,7 +1102,7 @@ ul.item {
 .filter-form_wrap .filter-title {
 	margin-bottom: 0;
 	padding: 23px;
-	padding-left: 157px;
+	padding-left: 200px;
 
 	background-color: #d9d9d9;
 }
@@ -1116,7 +1116,7 @@ fieldset {
 legend {
 	width: 201px;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 22px;
 	border-top: 2px solid #000000;
 }
 
@@ -1137,19 +1137,19 @@ legend {
 
 .filter-form .button {
 	width: 200px;
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 					/*ползунок Стоимость*/
 
 .range-filter {
 	width: 200px;
-	padding-bottom: 32px;
+	padding-bottom: 37px;
 }
 
 .range-controls {
 	position: relative;
-	padding-top: 40px;
+	padding-top: 35px;
 
 }
 
@@ -1168,7 +1168,7 @@ legend {
 
 .range-controls .toggle {
 	position: absolute;
-	top: 30px;
+	top: 25px;
 	left: 0;
 
 	width: 20px;
@@ -1231,7 +1231,6 @@ input[type="number"] {
 .bluetooth p {
 	margin: 0;
 	padding: 0;
-
 }
 
 input[type=checkbox]:checked + label::before {
@@ -1321,7 +1320,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 16px;
-	padding: 2px 85px 2px 70px;
+	padding: 2px 115px 2px 45px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1332,10 +1331,12 @@ input[type=radio]:not(:checked):disabled + label::before {
 }
 
 .sort-back {
-	margin-right: 190px;
+	margin-right: 125px;
+	padding: 0;
 }
 
 .sort-back li {
+	padding: 0;
 	padding-right: 20px;
 	display: inline-block;
 }
@@ -1404,8 +1405,8 @@ input[type=radio]:not(:checked):disabled + label::before {
 	position: relative;
 
 	width: 360px;
-	margin-right: 28px;
-	margin-left: 8px;
+	margin-right: 35px;
+	margin-left: 0;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -1463,11 +1464,13 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 .item-box {
 	position: relative;
+
 	width: 360px;
-	margin-left: 8px;
-	margin-bottom: 10px;
-	padding-top: 30px;
-	padding-bottom: 35px;
+	margin-left: 0;
+	margin-bottom: 5px;
+	padding-top: 33px;
+	padding-bottom: 37px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1502,8 +1505,9 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 .paginator {
 	max-width: 100%;
-	margin: 0 83px 68px  72px;
-	padding: 6px 0;
+	margin: 0 140px 80px  72px;
+	padding: 0;
+	padding-top: 5px;
 
 	display: flex; 
 	justify-content: space-between;
@@ -1527,6 +1531,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 ul.pages {
 	padding: 0;
+	padding-left: 10px;
 	display: flex;
 }
 
