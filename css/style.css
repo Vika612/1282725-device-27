@@ -44,10 +44,12 @@ img {max-width: 100%;}
 
 .visually-hidden {
 	position: absolute;
+
 	width: 1px;
 	height: 1px;
 	margin: -1px;
 	padding: 0;
+
 	border: 0;
 	clip: rect(0 0 0 0 );
 	overflow: hidden;
@@ -61,6 +63,7 @@ img {max-width: 100%;}
 	font-weight: 800;
 	line-height: 1.3em;
 	letter-spacing: 3.6px;
+
 	text-align: center;
 	text-transform: uppercase;
 	border: 0;
@@ -103,11 +106,13 @@ img {max-width: 100%;}
 
 .button-compare {
 	padding-top: 10px;
+
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 2.8em;
 	letter-spacing: 0.13px;
+
 	border: none;
 	cursor: pointer;
 
@@ -183,7 +188,8 @@ img {max-width: 100%;}
 }
 
 .menu-navigation_wrap {
-	margin-top: 15px;
+	margin-top: 17px;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -191,13 +197,15 @@ img {max-width: 100%;}
 
 .service-navigation {
 	width: 500px;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .service-navigation li:nth-child(3) {
-	padding-left: 70px;
+	margin-right: -3px;
+	padding-left: 72px;
 }
 
 					/*форма поиска*/
@@ -205,6 +213,7 @@ img {max-width: 100%;}
 .form-search label::before {
 	content: url("../img/search.svg");
 	padding-right: 8px;  
+	padding-left: 4px;
 }
 
 .search-button {
@@ -236,6 +245,7 @@ img {max-width: 100%;}
 	outline: none;
 	cursor: text;
 	border-bottom: 2px solid #000000;
+
 	color: #000000;
 	opacity: 1;
 }
@@ -249,6 +259,7 @@ img {max-width: 100%;}
 .search-button:focus {
 	display: inline-block;
 	cursor: pointer;
+
 	background-color: #000000;
 	color: rgba(255, 255, 255, 1);
 }
@@ -262,8 +273,9 @@ img {max-width: 100%;}
 					/*подменю пользователь*/
 
 .user-navigation {
-	width: 500px;
+	width: 502px;
 	margin: 0;
+	padding: 0;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -271,7 +283,7 @@ img {max-width: 100%;}
 }
 
 .user-navigation .user {
-	padding-right: 183px;
+	padding-right: 178px;
 }
 
 .user-navigation .exit {
@@ -336,8 +348,9 @@ img {max-width: 100%;}
 
 .catalog-navigation > a::after {
 	content: url("../img/plus.svg");
-	opacity: 0.3;
 	padding-left: 15px;
+
+	opacity: 0.3;
 }
 
 					/*выпадающее контекстное меню*/
@@ -417,8 +430,8 @@ img {max-width: 100%;}
 }
 
 .slider-image {
-	padding: 0;
 	margin-left: 34px;
+	padding: 0;
 }
 
 .slider-image-2 {
@@ -428,14 +441,16 @@ img {max-width: 100%;}
 
 .slider-desc {
 	position: relative;
+
 	max-width: 670px;
-	padding: 80px 50px 0 125px;
+	padding: 80px 50px 0 126px;
 }
 
 .slider-desc::before {
 	position: absolute;
 	top: 38px;
 	left: 126px;
+
 	width: 100px;
 	height: 7px;
 	content: "";
@@ -489,6 +504,7 @@ img {max-width: 100%;}
 .slider-slogan {
 	margin: 0;
 	padding-bottom: 5px;
+
 	font-family: "Gilroy";
 	font-size: 47px;
 	font-weight: 800;
@@ -503,16 +519,23 @@ img {max-width: 100%;}
 .slider-links {
 	position: absolute;
 	top: 320px;
-	right: 65px;
+	right: 61px;
+
+	padding: 0;
 }
 
 .slider-links li {
 	display: inline-block;
 }
 
+.slider-links li:nth-child(2) {
+	padding: 0 3px;
+}
+
 .slider-button {
 	border: none;
 	cursor: pointer;
+
 	background-color: transparent;
 }
 
@@ -531,6 +554,7 @@ img {max-width: 100%;}
 .slider-table {
 	width: 510px;
 	margin-top: 56px;
+
 	border-collapse: separate;
 }
 
@@ -540,7 +564,8 @@ img {max-width: 100%;}
 }
 
 .slider-table th {
-	padding: 0 53px 7px 0;
+	padding: 0 55px 7px 0;
+
 	font-family: "Gilroy";
 	font-size: 36px;
 	font-weight: 300;
@@ -560,7 +585,6 @@ img {max-width: 100%;}
 
 	color: #464646;
 }
-
 
 .slide-2,
 .slide-3 {
@@ -583,7 +607,7 @@ img {max-width: 100%;}
 }
 
 .main-catalog h3 {
-	padding-top: 17px;
+	padding-top: 16px;
 }
 
 .main-catalog .inner-box {
@@ -616,8 +640,8 @@ img {max-width: 100%;}
 	max-width: 1440px;
 	margin: 0 auto;
 	margin-top: 50px;
-	margin-bottom: 95px;
-	padding-bottom: 58px;
+	margin-bottom: 93px;
+	padding-bottom: 55px;
 
 	display: flex;
 
@@ -626,12 +650,13 @@ img {max-width: 100%;}
 
 .slider2-links {
 	width: 425px;
-	padding: 76px 90px 45px 140px;	
+	padding: 77px 90px 45px 140px;	
+
 	border-right: 7px solid #000000;
 }
 
 .slider2-links li {
-	padding-bottom: 28px;
+	padding-bottom: 30px;
 }
 
 .slider2-links li:last-child {
@@ -640,17 +665,6 @@ img {max-width: 100%;}
 
 .slider2-links .button {
 	width: 160px;
-}
-
-.slider2-links .button:active { 
-	width: 278px;
-	padding: 9px;
-	padding-right: 135px;
-	padding-left: 17px;
-
-	color: #f7e184;
-	background-color: #000000;
-	background-image: none;
 }
 
 .slider2-links .button-active {
@@ -754,23 +768,25 @@ img {max-width: 100%;}
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 47px 142px 86px 138px;
+	padding: 47px 142px 87px 138px;
 	
 	display: flex;
 	justify-content: space-between;
 }
 
 .columns_wrap .title {
-	margin-top: 83px;
-	margin-bottom: 45px;
+	margin-top: 82px;
+	margin-bottom: 44px;
 }
 
 .columns_wrap .title::before {
 	position: absolute;
-	top: 76px;
+	top: 75px;
 	content: "";
+
 	width: 80px;
 	height: 7px;
+
 	background-color: #000000;
 }
 
@@ -816,11 +832,16 @@ ul.about_us-partner {
 
 .contacts .button-map {
 	margin-top: 9px;
-	margin-bottom: 67px;
+	margin-bottom: 70px;
 	padding: 0 ;
 
 	border: none;
 	cursor: pointer;
+}
+
+.contacts .write_us-btn {
+	padding-right: 39px;
+	padding-left: 43px;
 }
 
 					/*footer*/
@@ -870,12 +891,12 @@ ul.about_us-partner {
 }
 
 .page-footer .user-navigation {
-	width: 350px;
-	padding-left: 23px;
+	width: 345px;
+	padding-left: 20px;
 }
 
-.user-navigation li {
-	padding-left: 5px;
+.user-navigation svg {
+	margin-right: 6px;
 }
 
 .user-navigation path {
@@ -906,8 +927,10 @@ ul.about_us-partner {
 }
 
 .service-navigation-footer {
+	width: 460px;
 	padding: 0;
 	padding-top: 3px;
+	padding-right: 33px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -915,7 +938,7 @@ ul.about_us-partner {
 }
 
 .service-navigation-footer a {
-	margin-right: 32px;
+	padding-right: 3px;
 
 	font-family: "Gilroy";
 	font-size: 18px;
@@ -960,16 +983,24 @@ ul.about_us-partner {
 	justify-content: space-between;
 }
 
-.social li {
+.social a {
 	margin-right: 23px;
+	width: 32px;
+	height: 32px;
+
+	display: block;
 }
 
 .facebook {
-	background-image: url("../ïmg/fb.svg");
-	background-repeat: no-repeat;
+	background-image: url("../img/fb.svg");	
+}
 
-	width: 32px;
-	height: 32px;
+.instagram {
+	background-image: url("../img/instagram.svg");
+}
+
+.twitter {
+	background-image: url("../img/twitter.svg");
 }
 
 .social a:link { 
@@ -1113,6 +1144,7 @@ ul.item {
 
 .filter-title {
 	padding: 5px;
+	
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
@@ -1348,7 +1380,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 16px;
-	padding: 2px 115px 2px 45px;
+	padding: 2px 109px 2px 45px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1359,13 +1391,16 @@ input[type=radio]:not(:checked):disabled + label::before {
 }
 
 .sort-back {
-	margin-right: 125px;
+	margin-right: 170px;
+	margin-left: 0;
 	padding: 0;
 }
 
 .sort-back li {
 	padding: 0;
 	padding-right: 20px;
+	padding-left: 5px;
+
 	display: inline-block;
 }
 
@@ -1433,8 +1468,10 @@ input[type=radio]:not(:checked):disabled + label::before {
 	position: relative;
 
 	width: 360px;
+	margin-bottom: 6px;
 	margin-right: 35px;
 	margin-left: 0;
+
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -1495,9 +1532,9 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 	width: 360px;
 	margin-left: 0;
-	margin-bottom: 4px;
-	padding-top: 33px;
-	padding-bottom: 37px;
+	margin-top: 31px;
+	margin-bottom: 50px;
+	padding: 0;
 
 	display: flex;
 	justify-content: space-between;
@@ -1533,7 +1570,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 .paginator {
 	max-width: 100%;
-	margin: 0 140px 77px  72px;
+	margin: -10px 140px 73px  72px;
 
 	display: flex; 
 	justify-content: space-between;
@@ -1663,7 +1700,7 @@ ul.pages {
 	font-family: "Gilroy";
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 1.3em;
+	line-height: 1.33em;
 
 	color: #000000;
 }
@@ -1675,6 +1712,7 @@ ul.pages {
 
 .modal-item textarea {
 	width: 760px;
+	min-height: 155px;
 	margin-bottom: 40px;
 }
 
@@ -1694,6 +1732,7 @@ ul.pages {
 .modal-item input,
 .modal-item textarea {
 	padding: 20px;
+
 	border: none;
 	cursor: pointer;
 
