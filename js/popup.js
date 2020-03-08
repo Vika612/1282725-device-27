@@ -35,7 +35,7 @@ popup.classList.remove("modal-show");
 
 
 form.addEventListener("submit", function (evt) {
-  if (!na_me.value || !ma_il.value) {
+  if (!na_me.value||!ma_il.value) {
   evt.preventDefault();
   console.log("Введите Ваше имя и адрес электронной почты");
   } else {

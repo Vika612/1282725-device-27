@@ -22,6 +22,7 @@ html {
 }
 
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
 
@@ -203,12 +204,12 @@ img {max-width: 100%;}
 
 .form-search label::before {
 	content: url("../img/search.svg");
-	padding-right: 8px;
+	padding-right: 8px;  
 }
 
 .search-button {
 	margin-left: -5px;
-	padding: 7px;
+	padding: 6px;
 
 	border: 2px solid #000000;
 	display: none;
@@ -816,6 +817,7 @@ ul.about_us-partner {
 .contacts .button-map {
 	margin-top: 9px;
 	margin-bottom: 67px;
+	padding: 0 ;
 
 	border: none;
 	cursor: pointer;
@@ -950,15 +952,6 @@ ul.about_us-partner {
 	justify-content: space-between;
 }
 
-.social_wrap::before {
-	width: 80px;
-	height: 7px;
-	margin-top: 13px;
-	content: "";
-
-	background-color: #ffc600;
-}
-
 .social {
 	margin: 0;
 	margin-right: 70px;
@@ -971,7 +964,15 @@ ul.about_us-partner {
 	margin-right: 23px;
 }
 
-.social a:link {
+.facebook {
+	background-image: url("../ïmg/fb.svg");
+	background-repeat: no-repeat;
+
+	width: 32px;
+	height: 32px;
+}
+
+.social a:link { 
 	opacity: 0.3;
 }
 
@@ -982,6 +983,17 @@ ul.about_us-partner {
 
 .social a:active {
 	opacity: 0.1;
+}
+
+					/* Желтая линия */
+
+.social_wrap::before {
+	width: 80px;
+	height: 7px;
+	margin-top: 13px;
+	content: "";
+
+	background-color: #ffc600;
 }
 
 
@@ -1051,6 +1063,7 @@ ul.about_us-partner {
 .breadcrumbs a:active {
 	color: rgba(0, 0, 0, 0.1);
 }
+
 
 							/*Фильтр*/
 
@@ -1430,7 +1443,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 					/*label NEW*/
 
-.item-4 .item_wrap::before {
+.new .item_wrap::before {
 	position: absolute;
 	top: 27px;
 	right: 27px;
@@ -1482,13 +1495,13 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 	width: 360px;
 	margin-left: 0;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 	padding-top: 33px;
 	padding-bottom: 37px;
 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: space-between ;
 }
 
 .item-box a {
@@ -1520,16 +1533,18 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 .paginator {
 	max-width: 100%;
-	margin: 0 140px 80px  72px;
-	padding: 2px 0;
+	margin: 0 140px 77px  72px;
 
 	display: flex; 
 	justify-content: space-between;
+	align-items: center;
 
 	background-color: #ebebeb;
 }
 
-.paginator button {
+.paginator a {
+	display: block;
+
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
@@ -1538,43 +1553,42 @@ input[type=radio]:not(:checked):disabled + label::before {
 	text-transform: uppercase;
 
 	cursor: pointer;
-	border: none;
 
+	color: #000000;
 	background-color: transparent;
 }
 
 ul.pages {
 	padding: 0;
-	padding-left: 10px;
+	padding-left: 11px;
 	display: flex;
 }
 
 .pages li:nth-child(2) {
-	padding: 0 20px;
+	padding: 0 28px;
 }
 
-.pages button {
+.pages a{
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.pages button:hover,
-.pages button:focus {
+.pages a:hover,
+.pages a:focus {
 	outline: none;
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.pages button:active,
+.pages a:active,
 .pages .active {
 	color: rgba(0, 0, 0, 1);
 }
 
 .button-flip {
-	padding: 0 32px;
+	padding: 23px 30px;
 }
 
 .button-flip:hover,
 .button-flip:focus {
-	outline: none;
 	background-color: #d6d6d6;
 }
 
@@ -1589,6 +1603,7 @@ ul.pages {
 .modal {
 	position: fixed;
 	width: 960px;
+	z-index: 5;
 
 	color: #000000;
 	background-color: #ffffff;
@@ -1604,7 +1619,7 @@ ul.pages {
 	position: absolute;
 	top: 22px;
 	right: 22px;
-	z-index: 5;
+	z-index: 6;
 
 	cursor: pointer;
 	content: url("../img/modal-close.svg");
@@ -1622,10 +1637,11 @@ ul.pages {
 
 .modal-write_us {
 	top: 50px;
-	left: 140px;
+	left: 350px;
 
 	padding: 98px 100px 70px;
-	display: none;
+
+	display: none; 
 }
 
 .modal-show {
@@ -1655,10 +1671,6 @@ ul.pages {
 .modal-item input {
 	width: 360px;
 	height: 50px;
-}
-
-.modal-item input:invalid {
-	background-color: #f6dada;
 }
 
 .modal-item textarea {
@@ -1705,7 +1717,7 @@ ul.pages {
 
 .modal-map {
 	top: 50px;
-	left: 140px;
+	left: 350px;
 
 	width: 960px;
 	height: 559px;
