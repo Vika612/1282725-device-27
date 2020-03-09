@@ -1122,7 +1122,7 @@ ul.about_us-partner {
 
 .filter-form {
 	height: 100%;
-	padding: 70px 35px 0 200px;
+	padding: 67px 35px 0 200px;
 	background: #ebebeb;
 }
 
@@ -1170,7 +1170,7 @@ fieldset {
 
 legend {
 	width: 201px;
-	padding-top: 10px;
+	padding-top: 9px;
 	padding-bottom: 22px;
 	border-top: 2px solid #000000;
 }
@@ -1205,7 +1205,7 @@ legend {
 .range-controls {
 	position: relative;
 	padding-top: 35px;
-
+	padding-bottom: 5px;
 }
 
 .range-controls .scale {
@@ -1633,7 +1633,34 @@ ul.pages {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+@keyframes bounce {
+	0% {transform: translateY(-500px);}
+	70% {transform: translateY(30px);}
+	90% {transform: translateY(-10px);}
+	100% {transform: translateY(0);}
+}
 
+@keyframes shake {
+	0%,
+	100% {
+	  transform: translateX(0);
+	}
+  
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+	  transform: translateX(-10px);
+	}
+  
+	20%,
+	40%,
+	60%,
+	80% {
+	  transform: translateX(10px);
+	}
+  }
 
 					/*модальные окна*/
 
@@ -1683,6 +1710,11 @@ ul.pages {
 
 .modal-show {
 	display: block;
+	animation: bounce 0.7s;
+}
+
+.modal-error {
+	animation: shake 0.7s;
 }
 
 .modal-form {
