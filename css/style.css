@@ -1742,6 +1742,10 @@ ul.pages {
 	height: 50px;
 }
 
+.modal-item input:invalid {
+	background-color: #f6dada;
+}
+
 .modal-item textarea {
 	width: 760px;
 	min-height: 155px;
