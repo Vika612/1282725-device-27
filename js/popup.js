@@ -27,13 +27,6 @@ if (storage) {
 } else {
   na_me.focus();
 } 
-
-if (storage) {
-  mail.value = storage;
-  message.focus();
-} else {
-  mail.focus();
-}
 });
 
 
@@ -50,10 +43,6 @@ form.addEventListener('submit', function (evt) {
   popup.classList.remove('modal-error');
   popup.offsetWidth = popup.offsetWidth;
   popup.classList.add('modal-error');
-  } else {
-      if (isStorageSupport) {
-        localStorage.setItem('na_me', na_me.value);
-    }
   }
 });
 

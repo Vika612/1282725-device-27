@@ -1758,6 +1758,7 @@ ul.pages {
 .modal-item textarea {
 	width: 760px;
 	min-height: 155px;
+	resize: none;
 	margin-bottom: 40px;
 }
 
