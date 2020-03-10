@@ -71,7 +71,7 @@ img {max-width: 100%;}
 	color: #000000;
 	background-color: transparent;
 	background-image: linear-gradient(transparent 35%, #f0c52e 35%, #f0c52e 65%, transparent 65%);
-	transition: 1.5s;
+	transition: 1.0s;
 }
 
 .button:hover,
@@ -212,6 +212,7 @@ img {max-width: 100%;}
 
 .form-search label::before {
 	content: url("../img/search.svg");
+
 	padding-right: 8px;  
 	padding-left: 4px;
 }
@@ -303,16 +304,19 @@ img {max-width: 100%;}
 .user-navigation a.user::before,
 .user-navigation a.user-active::before{
 	content: url("../img/user.svg");
+
 	padding-right: 10px;
 }
 
 .user-navigation a.compare::before {
 	content: url("../img/compare.svg");
+
 	padding-right: 10px;
 }
 
 .user-navigation a.cart::before {
 	content: url("../img/cart.svg");
+
 	padding-right: 10px;
 }
 
@@ -348,6 +352,7 @@ img {max-width: 100%;}
 
 .catalog-navigation > a::after {
 	content: url("../img/plus.svg");
+
 	padding-left: 15px;
 
 	opacity: 0.3;
@@ -479,9 +484,7 @@ img {max-width: 100%;}
 
 .slider-image-3 {
 	max-width: 526px;
-	margin-top: 65px;
-	margin-left: -30px;
-	margin-right: 40px;
+	margin: 65px 40px 0 -30px;
 }
 
 .slider-desc-3 {
@@ -526,6 +529,7 @@ img {max-width: 100%;}
 
 .slider-links li {
 	display: inline-block;
+	vertical-align: center;
 }
 
 .slider-links li:nth-child(2) {
@@ -766,6 +770,7 @@ img {max-width: 100%;}
 
 .columns_wrap {
 	position: relative;
+
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 47px 142px 87px 138px;
@@ -807,6 +812,7 @@ img {max-width: 100%;}
 
 .about_us-partner span {
 	padding-left: 17px;
+
 	font-family: "Gilroy";
 	font-size: 16px;
 	font-weight: 800;
@@ -1019,10 +1025,11 @@ ul.about_us-partner {
 					/* Желтая линия */
 
 .social_wrap::before {
+	content: "";
+
 	width: 80px;
 	height: 7px;
 	margin-top: 13px;
-	content: "";
 
 	background-color: #ffc600;
 }
@@ -1031,8 +1038,8 @@ ul.about_us-partner {
 						/*Каталог*/
 
 .inner-title {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	font-family: "Gilroy";
 	font-size: 47px;
@@ -1061,13 +1068,15 @@ ul.about_us-partner {
 }
 
 .breadcrumbs {
-	padding: 0;
 	margin-top: 20px;
+	padding: 0;
 }
 
 .breadcrumbs li {
 	padding-right: 15px;
+
 	display: inline-block;
+	
 }
 
 .breadcrumbs li:not(:last-child)::after {
