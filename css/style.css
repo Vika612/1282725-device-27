@@ -1109,14 +1109,14 @@ ul.about_us-partner {
 
 
 .main-inner_wrap {
-	max-width: 1440px;
+	max-width: 1440px; 
 	width: 100%; 
 	margin: 0 auto;
 	padding-top: 0;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;                                                                                           
+	justify-content: space-around;                                                                                          
 }
 
 
@@ -1385,7 +1385,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*Сортировка*/
 
 .sort-back_wrap {
-	width: 780px;
+	width: 780px; 
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 16px;
