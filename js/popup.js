@@ -12,7 +12,7 @@ var isStorageSupport = true;
 var storage = '';
 
 try {
-  storage = localStorage.getItem(na_me);
+  storage = localStorage.getItem('na_me');
 } catch (err) {
     isStorageSupport = false;
 }
@@ -25,6 +25,10 @@ if (storage) {
   na_me.value = storage;
   mail.focus();
 } else {
+  if (storage) {
+    mail.value = storage;
+    message.focus();
+  } else
   na_me.focus();
 } 
 });
