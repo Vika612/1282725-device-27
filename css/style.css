@@ -58,7 +58,9 @@ img {max-width: 100%;}
 					/*кнопки с градиентом*/
 
 .button {
+	width: 200px;
 	padding: 10px 0;
+
 	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -72,7 +74,7 @@ img {max-width: 100%;}
 	color: #000000;
 	background-color: transparent;
 	background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
-	animation-duration: 0.5s;
+	animation: 0.5s;
 }
 
 .button:hover,
@@ -99,9 +101,6 @@ img {max-width: 100%;}
 	width: 260px;
 }
 
-.items .button {
-	width: 200px;
-}
 
 					/*кнопка карточки товара*/
 
@@ -254,12 +253,14 @@ img {max-width: 100%;}
 
 .search:focus ~ .search-button {
 	display: inline-block;
+	vertical-align: bottom;
 	border-bottom: 2px solid #000000;
 }
 
 .search-button:hover,
 .search-button:focus {
 	display: inline-block;
+	vertical-align: bottom;
 	cursor: pointer;
 
 	background-color: #000000;
@@ -267,8 +268,9 @@ img {max-width: 100%;}
 }
 
 .search-button:active {
-	outline: none;
 	display: inline-block;
+	vertical-align: bottom;
+	outline: none;
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -290,6 +292,7 @@ img {max-width: 100%;}
 
 .user-navigation .exit {
 	padding: 0;
+
 	border: none;
 	cursor: pointer;
 
@@ -414,7 +417,7 @@ img {max-width: 100%;}
 	padding: 0;
 	margin: 0;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 1em;
@@ -518,7 +521,7 @@ img {max-width: 100%;}
 }
 
 .slider-text {
-	padding-bottom: 43px;
+	padding-bottom: 41px;
 }
 
 .slider-links {
@@ -531,7 +534,7 @@ img {max-width: 100%;}
 
 .slider-links li {
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: top;
 }
 
 .slider-links li:nth-child(2) {
@@ -605,6 +608,7 @@ img {max-width: 100%;}
 	padding-left: 0;
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -748,7 +752,6 @@ img {max-width: 100%;}
 
 .cooperation_wrap {
 	max-width: 1440px;
-	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 9px;
 	padding: 0 120px;
@@ -812,11 +815,11 @@ img {max-width: 100%;}
 }
 
 .about_us {
-	width: 480px;
+	max-width: 480px;
 }
 
 .contacts {
-	width: 560px;
+	max-width: 560px;
 }
 
 .about_us-partner span {
@@ -855,8 +858,8 @@ ul.about_us-partner {
 }
 
 .contacts .write_us-btn {
-	padding-right: 39px;
-	padding-left: 43px;
+	padding-right: 37px;
+	padding-left: 41px;
 }
 
 					/*footer*/
@@ -1091,6 +1094,7 @@ ul.about_us-partner {
 	padding-right: 15px;
 
 	display: inline-block;
+	vertical-align: top;
 	
 }
 
@@ -1133,7 +1137,6 @@ ul.about_us-partner {
 	flex-wrap: wrap;
 	justify-content: space-between;                                                                                          
 }
-
 
 .filter-form_wrap {
 	padding-top: 0;
@@ -1197,6 +1200,7 @@ legend {
 	width: 201px;
 	padding-top: 11px;
 	padding-bottom: 22px;
+
 	border-top: 2px solid #000000;
 }
 
@@ -1216,7 +1220,6 @@ legend {
 }
 
 .filter-form .button {
-	width: 200px;
 	margin-top: 35px;
 }
 
@@ -1289,6 +1292,7 @@ legend {
 	padding-top: 10px;
 
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .price-controls input {
@@ -1427,6 +1431,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	padding-left: 5px;
 
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 
@@ -1548,10 +1553,6 @@ input[type=radio]:not(:checked):disabled + label::before {
 	align-items: center;
 
 	background-color: rgba(238, 238, 238, 0.7);
-}
-
-.item-hover .button {
-	width: 200px;
 }
 
 .item-box {
@@ -1734,10 +1735,6 @@ ul.pages {
 	padding: 98px 100px 70px;
 
 	display: none; 
-}
-
-.modal-write_us .button {
-	width: 200px;
 }
 
 .modal-show {
