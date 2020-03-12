@@ -288,6 +288,7 @@ img {max-width: 100%;}
 }
 
 .user-navigation .exit {
+	padding: 0;
 	border: none;
 	cursor: pointer;
 
@@ -648,6 +649,7 @@ img {max-width: 100%;}
 	padding-bottom: 55px;
 
 	display: flex;
+	flex-wrap: wrap;
 
 	background: linear-gradient(to bottom, #ffffff 28%, #e5e5e5 28%);
 }
@@ -765,6 +767,7 @@ img {max-width: 100%;}
 .logo-VIVE img:hover {
 	background-image: url("../img/logo-4-jpg.jpg");
 }
+
 
 					/*информация о компании и контакты*/
 
@@ -1108,15 +1111,15 @@ ul.about_us-partner {
 							/*Фильтр*/
 
 .main-inner_wrap {
-	max-width: 1440px; 
-	width: 100%;
+	max-width: 1440px;
+	min-width: 1220px;
 	
 	margin: 0 auto;
 	padding-top: 0;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;                                                                                          
+	justify-content: space-between;                                                                                          
 }
 
 
@@ -1179,7 +1182,7 @@ fieldset {
 
 legend {
 	width: 201px;
-	padding-top: 9px;
+	padding-top: 11px;
 	padding-bottom: 22px;
 	border-top: 2px solid #000000;
 }
@@ -1208,13 +1211,13 @@ legend {
 
 .range-filter {
 	width: 200px;
-	padding-bottom: 37px;
+	padding-bottom: 30px;
 }
 
 .range-controls {
 	position: relative;
-	padding-top: 35px;
-	padding-bottom: 5px;
+	padding-top: 37px;
+	padding-bottom: 0;
 }
 
 .range-controls .scale {
@@ -1269,8 +1272,8 @@ legend {
 
 .price-controls label {
 	width: 40%;
-	padding: 0;
 	margin: 0;
+	padding-top: 10px;
 
 	display: inline-block;
 }
