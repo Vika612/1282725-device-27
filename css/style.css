@@ -107,7 +107,7 @@ img {max-width: 100%;}
 .button-compare {
 	padding-top: 10px;
 
-	font-family: "Open Sans";
+	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 2.8em;
@@ -582,7 +582,7 @@ img {max-width: 100%;}
 }
 
 .slider-table td {
-	font-family: "Open Sans";
+	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 1.5em;
@@ -643,14 +643,18 @@ img {max-width: 100%;}
 
 .slider2_wrap {
 	max-width: 1440px;
+	
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 93px;
 	padding-bottom: 55px;
 
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
+}
 
+.slider2 {
+	width: 100%;
 	background: linear-gradient(to bottom, #ffffff 28%, #e5e5e5 28%);
 }
 
@@ -743,6 +747,7 @@ img {max-width: 100%;}
 
 .cooperation_wrap {
 	max-width: 1440px;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 9px;
 	padding: 0 120px;
@@ -855,14 +860,20 @@ ul.about_us-partner {
 
 					/*footer*/
 
-.page-footer {
+.page-footer_wrap {
 	position: relative;
 
 	max-width: 1440px;
+	
 	margin: 0 auto;
 	padding: 65px 140px 45px;
 	
 	color: #ffffff;
+	
+}
+
+.page-footer {
+	width: 100%;
 	background-color: #464646;
 }
 
@@ -1089,7 +1100,7 @@ ul.about_us-partner {
 
 .breadcrumbs a,
 .breadcrumbs li {
-	font-family: "Open Sans";
+	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.7em;
@@ -1112,7 +1123,7 @@ ul.about_us-partner {
 
 .main-inner_wrap {
 	max-width: 1440px;
-	min-width: 1220px;
+	width: 100%; 
 	
 	margin: 0 auto;
 	padding-top: 0;
@@ -1133,6 +1144,7 @@ ul.about_us-partner {
 }
 
 .filter-form {
+	width: 100%;
 	height: 100%;
 	padding: 67px 35px 0 200px;
 	background: #ebebeb;
@@ -1192,7 +1204,7 @@ legend {
 }
 
 .filter-form label {
-	font-family: "Open Sans";
+	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 2.9em;
@@ -1238,7 +1250,7 @@ legend {
 	top: 25px;
 	left: 0;
 
-	width: 20px;
+	width: 22px;
 	height: 22px;
 	border: 9px solid #ffffff;
 	cursor: pointer;
@@ -1248,7 +1260,7 @@ legend {
 }
 
 .range-controls .toggle:hover {
-	width: 22px;
+	width: 24px;
 	height: 24px;
 }
 
@@ -1402,6 +1414,8 @@ input[type=radio]:not(:checked):disabled + label::before {
 	background-color: #ebebeb;
 }
 
+
+
 .sort-back {
 	margin-right: 170px;
 	margin-left: 0;
@@ -1419,7 +1433,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 .sort-back .button-sort {
 	border: none;
-	font-family: "Open Sans";
+	font-family: "Open Sans", "Tahoma", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.3em;
@@ -1513,7 +1527,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	letter-spacing: 0.7px;
 
 	color: rgba(0, 0, 0, 0.2);
-	background-color: rgba(205, 57, 68, 0.1);
+	background-color: rgba(205, 57, 68, 0);
 }
 
 .item_wrap:hover .item-hover {
