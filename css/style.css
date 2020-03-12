@@ -58,7 +58,7 @@ img {max-width: 100%;}
 					/*кнопки с градиентом*/
 
 .button {
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.3em;
@@ -343,7 +343,7 @@ img {max-width: 100%;}
 
 .catalog-navigation > a,
 .service-navigation a {
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.3em;
@@ -470,7 +470,7 @@ img {max-width: 100%;}
 	right: 31px;
 	content: "01";
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 179px;
 	font-weight: 800;
 	line-height: 1em;
@@ -509,7 +509,7 @@ img {max-width: 100%;}
 	margin: 0;
 	padding-bottom: 5px;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 1.2em;
@@ -571,7 +571,7 @@ img {max-width: 100%;}
 .slider-table th {
 	padding: 0 55px 7px 0;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 36px;
 	font-weight: 300;
 	line-height: 1.3em;
@@ -821,7 +821,7 @@ img {max-width: 100%;}
 .about_us-partner span {
 	padding-left: 17px;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 2.5em;
@@ -960,7 +960,7 @@ ul.about_us-partner {
 .service-navigation-footer a {
 	padding-right: 3px;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.3em;
@@ -1055,7 +1055,7 @@ ul.about_us-partner {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 1em;
@@ -1064,7 +1064,7 @@ ul.about_us-partner {
 
 .main-catalog h3,
 .filter-form legend {
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.3em;
@@ -1169,7 +1169,7 @@ ul.item {
 .filter-title {
 	padding: 5px;
 	
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 1.5em;
@@ -1274,7 +1274,7 @@ legend {
 
 .price-controls label,
 .price-controls input {
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.7em;
@@ -1414,8 +1414,6 @@ input[type=radio]:not(:checked):disabled + label::before {
 	background-color: #ebebeb;
 }
 
-
-
 .sort-back {
 	margin-right: 170px;
 	margin-left: 0;
@@ -1520,7 +1518,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	border-color: rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 14px;
 	font-weight: 800;
 	line-height: 1.7em;
@@ -1569,7 +1567,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	width: 260px;
 	display: block;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.3em;
@@ -1581,7 +1579,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 .item-box p {
 	margin: 0;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.5em;
@@ -1606,7 +1604,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 .paginator a {
 	display: block;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 1.5em;
@@ -1754,7 +1752,7 @@ ul.pages {
 	padding-bottom: 13px;
 	cursor: pointer;
 
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.33em;
