@@ -74,7 +74,7 @@ img {max-width: 100%;}
 	color: #000000;
 	background-color: transparent;
 	background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
-	animation: 0.5s;
+	transition-duration: 0.3s;
 }
 
 .button:hover,
@@ -370,8 +370,9 @@ img {max-width: 100%;}
 	position: relative;
 }
 
-.catalog-navigation:hover .sub-menu_wrap {
-	display: flex;
+.catalog-navigation:hover .sub-menu_wrap,
+.catalog-navigation:focus-within .sub-menu_wrap{
+	visibility: visible;
 }
 
 .sub-menu_wrap {
@@ -381,7 +382,7 @@ img {max-width: 100%;}
 
 	width: 1160px;
 	padding: 20px 60px 30px;
-	display: none;
+	visibility: hidden;
 
 	background-color: #f7e296;
 }
@@ -411,6 +412,8 @@ img {max-width: 100%;}
 .sub-menu a {
 	line-height: 2.4em;	
 }
+
+
 
 					/*главный контент*/
 
@@ -653,7 +656,7 @@ img {max-width: 100%;}
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 93px;
-	padding-bottom: 55px;
+	padding-bottom: 30px;
 
 	display: flex;
 	flex-wrap: wrap;	
@@ -661,28 +664,29 @@ img {max-width: 100%;}
 
 .slider2 {
 	width: 100%;
-	background: linear-gradient(to bottom, #ffffff 28%, #e5e5e5 28%);
+	background: linear-gradient(to bottom, #ffffff 29%, #e5e5e5 29%);
 }
 
 .slider2-links {
 	width: 425px;
-	padding: 77px 90px 45px 140px;	
+	padding: 77px 90px 60px 140px;	
 
 	border-right: 7px solid #000000;
 }
 
 .slider2-links li {
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 }
 
 .slider2-links li:last-child {
-	padding-top: 5px;
+	padding-top: 0;
 }
 
 .slider2-links .button {
 	width: 160px;
 }
 
+.slider2-links button:active,
 .slider2-links .button-active {
 	width: 278px;
 	padding: 9px;
@@ -754,7 +758,7 @@ img {max-width: 100%;}
 .cooperation_wrap {
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-bottom: 9px;
+	margin-bottom: 11px;
 	padding: 0 120px;
 
 	display: flex;
@@ -786,7 +790,7 @@ img {max-width: 100%;}
 
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 47px 142px 79px 138px;
+	padding: 47px 142px 78px 138px;
 	
 	display: flex;
 	justify-content: space-between;
