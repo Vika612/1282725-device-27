@@ -1144,7 +1144,7 @@ ul.about_us-partner {
 }
 
 .main-inner_wrap {
-	max-width: 1440px;
+	width: 1440px;
 	min-width: 1220px;
 	
 	margin: 0 auto;
