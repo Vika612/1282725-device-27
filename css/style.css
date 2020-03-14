@@ -651,7 +651,7 @@ img {max-width: 100%;}
 					/*слайдер дополнительный сервис*/
 
 .slider2_wrap {
-	max-width: 1440px;
+	max-width: 1160px;
 	
 	margin: 0 auto;
 	margin-top: 50px;
@@ -668,8 +668,7 @@ img {max-width: 100%;}
 }
 
 .slider2-links {
-	width: 425px;
-	padding: 77px 90px 60px 140px;	
+	padding: 77px 0 60px 0;	
 
 	border-right: 7px solid #000000;
 }
@@ -756,14 +755,14 @@ img {max-width: 100%;}
 					/*компании-партнеры*/
 
 .cooperation_wrap {
-	max-width: 1440px;
+	max-width: 1160px;
 	margin: 0 auto;
 	margin-bottom: 11px;
-	padding: 0 120px;
+	padding: 0;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .logo-DJI img:hover {
@@ -788,9 +787,9 @@ img {max-width: 100%;}
 .columns_wrap {
 	position: relative;
 
-	max-width: 1440px;
+	max-width: 1160px;
 	margin: 0 auto;
-	padding: 47px 142px 78px 138px;
+	padding: 47px 0 78px 0;
 	
 	display: flex;
 	justify-content: space-between;
@@ -867,15 +866,16 @@ ul.about_us-partner {
 	padding-left: 41px;
 }
 
+
 					/*footer*/
 
 .page-footer_wrap {
 	position: relative;
 
-	max-width: 1440px;
+	max-width: 1160px;
 	
 	margin: 0 auto;
-	padding: 70px 140px 45px;
+	padding: 65px 0 45px;
 	
 	color: #ffffff;
 	
@@ -1133,8 +1133,8 @@ ul.about_us-partner {
 
 .main_wrap {
 	background-image: 
-	linear-gradient(to right, #d9d9d9 30%, #eeeeee 30%),
-	linear-gradient(to right, #ebebeb 30%, transparent 30%);
+	linear-gradient(to right, #d9d9d9 29%, #eeeeee 29%),
+	linear-gradient(to right, #ebebeb 29%, transparent 29%);
 
 	background-size: 
 	100% 70px,
@@ -1144,9 +1144,7 @@ ul.about_us-partner {
 }
 
 .main-inner_wrap {
-	width: 1440px;
-	min-width: 1220px;
-	
+	max-width: 1220px;
 	margin: 0 auto;
 	padding-top: 0;
 
@@ -1159,7 +1157,7 @@ ul.about_us-partner {
 .filter-form_wrap {
 	padding-top: 0;
 
-	flex-basis: 32.5%;	
+	flex-basis: 29%;	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1168,25 +1166,25 @@ ul.about_us-partner {
 }
 
 .filter-form {
-	width: 100%;
 	height: 100%;
-	padding: 67px 35px 0 200px;
+	padding: 67px 0 0 90px;
 }
 
 .inner_wrap {
-	flex-basis: 67.5%;
+	flex-basis: 71%;
 	display: flex;
 	flex-direction: column;
 }
 
 ul.item {
 	margin: 0;
-	padding: 70px 73px 0;
-	padding-right: 105px;;
+	padding-top: 70px;
+	padding-left: 55px;
+	padding-right: 9px;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .filter-title {
@@ -1205,7 +1203,7 @@ ul.item {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 23px;
-	padding-left: 200px;
+	padding-left: 90px;
 
 	background-color: #d9d9d9;
 }
@@ -1240,7 +1238,7 @@ legend {
 }
 
 .filter-form .button {
-	margin-top: 35px;
+	margin-top: 25px;
 }
 
 					/*ползунок Стоимость*/
@@ -1427,25 +1425,26 @@ input[type=radio]:not(:checked):disabled + label::before {
 .sort-back_wrap {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 109px 0 45px;
+	padding: 0;
+	padding-left: 71px;
+	padding-right: 25px;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 
 	background-color: #ebebeb;
 }
 
 .sort-back {
-	margin-right: 170px;
-	margin-left: 0;
+	margin-left: -170px;
 	padding: 0;
 }
 
 .sort-back li {
 	padding: 0;
-	padding-right: 20px;
+	padding-right: 15px; 
 	padding-left: 5px;
 
 	display: inline-block;
@@ -1516,12 +1515,11 @@ input[type=radio]:not(:checked):disabled + label::before {
 	position: relative;
 
 	width: 360px;
-	margin-bottom: 6px;
-	margin-right: 35px;
 	margin-left: 0;
 
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 					/*label NEW*/
@@ -1578,7 +1576,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 	width: 360px;
 	margin-left: 0;
-	margin-top: 31px;
+	margin-top: 34px;
 	margin-bottom: 50px;
 	padding: 0;
 
@@ -1615,8 +1613,10 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	max-width: 100%;
-	margin: -10px 140px 73px  72px;
+	max-width: 765px;
+	margin-top: -15px;
+	margin-bottom: 75px;
+	margin-left: 74px;
 
 	display: flex; 
 	justify-content: space-between;
