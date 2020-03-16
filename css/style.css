@@ -1132,9 +1132,9 @@ ul.about_us-partner {
 							/*Фильтр*/
 
 .main_wrap {
-	background-image: 
-	linear-gradient(to right, #d9d9d9 29%, #eeeeee 29%),
-	linear-gradient(to right, #ebebeb 29%, transparent 29%);
+	background-image:  
+	linear-gradient(to right, #d9d9d9 28%, #eeeeee 28%),
+	linear-gradient(to right, #ebebeb 28%, transparent 28%);
 
 	background-size: 
 	100% 70px,
@@ -1144,7 +1144,7 @@ ul.about_us-partner {
 }
 
 .main-inner_wrap {
-	max-width: 1220px;
+	max-width: 1160px;
 	margin: 0 auto;
 	padding-top: 0;
 
@@ -1157,7 +1157,7 @@ ul.about_us-partner {
 .filter-form_wrap {
 	padding-top: 0;
 
-	flex-basis: 29%;	
+	flex-basis: 28%;	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1167,11 +1167,11 @@ ul.about_us-partner {
 
 .filter-form {
 	height: 100%;
-	padding: 67px 0 0 90px;
+	padding: 67px 0 0 60px;
 }
 
 .inner_wrap {
-	flex-basis: 71%;
+	flex-basis: 72%;
 	display: flex;
 	flex-direction: column;
 }
@@ -1203,7 +1203,7 @@ ul.item {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 23px;
-	padding-left: 90px;
+	padding-left: 60px;
 
 	background-color: #d9d9d9;
 }
@@ -1614,10 +1614,10 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	max-width: 765px;
+	max-width: 740px;
 	margin-top: -15px;
 	margin-bottom: 75px;
-	margin-left: 74px;
+	margin-left: 70px;
 
 	display: flex; 
 	justify-content: space-between;
@@ -1658,7 +1658,6 @@ ul.pages {
 
 .pages a:hover,
 .pages a:focus {
-	outline: none;
 	color: rgba(0, 0, 0, 0.6);
 }
 
