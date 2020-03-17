@@ -23,6 +23,7 @@ html {
 
 body {
 	position: relative;
+	min-width: 1160px;
 	margin: 0;
 	padding: 0;
 
@@ -433,7 +434,7 @@ img {max-width: 100%;}
 	position: relative;
 	z-index: 2;
 
-	max-width: 1130px;
+	width: 1160px;
 	margin: 0 auto;
 	margin-top: -127px;
 	margin-bottom: 83px;
@@ -607,7 +608,7 @@ img {max-width: 100%;}
 					/*главный каталог-ссылки*/
 
 .main-catalog ul {
-	max-width: 1160px;
+	width: 1160px;
 	margin: 0 auto;
 	padding-left: 0;
 
@@ -651,7 +652,7 @@ img {max-width: 100%;}
 					/*слайдер дополнительный сервис*/
 
 .slider2_wrap {
-	max-width: 1160px;
+	width: 1160px;
 	
 	margin: 0 auto;
 	margin-top: 50px;
@@ -755,7 +756,7 @@ img {max-width: 100%;}
 					/*компании-партнеры*/
 
 .cooperation_wrap {
-	max-width: 1160px;
+	width: 1160px;
 	margin: 0 auto;
 	margin-bottom: 11px;
 	padding: 0;
@@ -787,7 +788,7 @@ img {max-width: 100%;}
 .columns_wrap {
 	position: relative;
 
-	max-width: 1160px;
+	width: 1160px;
 	margin: 0 auto;
 	padding: 47px 0 78px 0;
 	
@@ -872,7 +873,7 @@ ul.about_us-partner {
 .page-footer_wrap {
 	position: relative;
 
-	max-width: 1160px;
+	width: 1160px;
 	
 	margin: 0 auto;
 	padding: 65px 0 45px;
@@ -898,7 +899,7 @@ ul.about_us-partner {
 					/*подменю пользователь*/
 
 .user-footer_wrap {
-	max-width: 1440px;
+	width: 1160px;
 	margin: 0 auto;
 
 	display: flex;
@@ -1144,7 +1145,7 @@ ul.about_us-partner {
 }
 
 .main-inner_wrap {
-	max-width: 1160px;
+	width: 1160px;
 	margin: 0 auto;
 	padding-top: 0;
 
@@ -1340,7 +1341,7 @@ input[type="number"] {
 	padding: 0;
 }
 
-input[type=checkbox]:checked + label::before {
+input[type=checkbox]:checked + label::before { 
 	content: url("../img/checkbox-on.svg");
 	padding-right: 13px;
 }
