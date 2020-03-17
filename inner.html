@@ -96,38 +96,45 @@
             
           <fieldset class="filter-color">
             <legend>Цвет</legend>
-              <p>
-                <input class="visually-hidden" id="black" type="checkbox" name="black" checked>
-                <label for="black">Чёрный</label>
-              </p>
-              <p>
-                <input class="visually-hidden" id="white" type="checkbox" name="white">
-                <label for="white">Белый</label>
-              </p>
-              <p>
-                <input class="visually-hidden" id="blue" type="checkbox" name="blue" checked>
-                <label for="blue">Синий</label>
-              </p>
-              <p>
-                <input class="visually-hidden" id="red" type="checkbox" name="red" checked>
-                <label for="red">Красный</label>
-              </p>
-              <p>
-                <input class="visually-hidden" id="pink" type="checkbox" name="pink">
-                <label for="pink">Розовый</label>
-              </p>
+              <label class="check option">
+                <input class="check_input" type="checkbox" name="check_input" checked>
+                <span class="check_box"></span>
+                Чёрный
+              </label>
+              <label class="check option">
+                <input class="check_input" type="checkbox" name="check_input">
+                <span class="check_box"></span>
+                Белый
+              </label>
+              <label class="check option">
+                <input class="check_input" type="checkbox" name="check_input" checked>
+                <span class="check_box"></span>
+                Синий
+              </label>
+              <label class="check option">
+                <input class="check_input" type="checkbox" name="check_input" checked>
+                <span class="check_box"></span>
+                Красный
+              </label>
+              <label class="check option">
+                <input class="check_input" type="checkbox" name="check_input">
+                <span class="check_box"></span>
+                Розовый
+              </label>
           </fieldset>
 
           <fieldset class="bluetooth">
             <legend>Bluetooth</legend>
-              <p>
-                <input class="visually-hidden" id="yes" type="radio" name="bluetooth" checked >
-                <label for="yes">Есть</label>
-              </p>
-              <p>
-                <input class="visually-hidden" id="no" type="radio" name="bluetooth">
-                <label for="no">Нет</label>
-              </p>
+              <label class="check option">
+                <input class="check_input" type="radio" name="radio_input" checked>
+                <span class="radio_box"></span>
+                Есть
+              </label>
+              <label class="check option">
+                <input class="check_input" type="radio" name="radio_input">
+                <span class="radio_box"></span>
+                Нет
+              </label>
             </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>

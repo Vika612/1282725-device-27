@@ -24,6 +24,7 @@ html {
 body {
 	position: relative;
 	min-width: 1160px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 
@@ -145,7 +146,8 @@ img {max-width: 100%;}
 .site-navigation_wrap {
 	position: relative;
 
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	height: 299px;
 	margin: 0 auto;
 	margin-top: 40px;
@@ -434,7 +436,8 @@ img {max-width: 100%;}
 	position: relative;
 	z-index: 2;
 
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: -127px;
 	margin-bottom: 83px;
@@ -608,7 +611,8 @@ img {max-width: 100%;}
 					/*главный каталог-ссылки*/
 
 .main-catalog ul {
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 	padding-left: 0;
 
@@ -652,7 +656,8 @@ img {max-width: 100%;}
 					/*слайдер дополнительный сервис*/
 
 .slider2_wrap {
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	
 	margin: 0 auto;
 	margin-top: 50px;
@@ -756,7 +761,8 @@ img {max-width: 100%;}
 					/*компании-партнеры*/
 
 .cooperation_wrap {
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 11px;
 	padding: 0;
@@ -873,13 +879,13 @@ ul.about_us-partner {
 .page-footer_wrap {
 	position: relative;
 
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	
 	margin: 0 auto;
 	padding: 65px 0 45px;
 	
 	color: #ffffff;
-	
 }
 
 .page-footer {
@@ -899,7 +905,8 @@ ul.about_us-partner {
 					/*подменю пользователь*/
 
 .user-footer_wrap {
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 
 	display: flex;
@@ -1145,7 +1152,8 @@ ul.about_us-partner {
 }
 
 .main-inner_wrap {
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 0;
 
@@ -1180,12 +1188,12 @@ ul.about_us-partner {
 ul.item {
 	margin: 0;
 	padding-top: 70px;
-	padding-left: 55px;
-	padding-right: 9px;
+	padding-left: 77px;
+	padding-right: 0;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .filter-title {
@@ -1335,89 +1343,83 @@ input[type="number"] {
 	padding-bottom: 30px;
 }
 
-.filter-color p,
-.bluetooth p {
-	margin: 0;
-	padding: 0;
+					/* checkbox */
+
+.option {
+	display: block;
 }
 
-input[type=checkbox]:checked + label::before { 
-	content: url("../img/checkbox-on.svg");
-	padding-right: 13px;
+.check {
+	position: relative;
+	padding-left: 2.5em;
 }
 
-input[type=checkbox]:checked:hover + label::before,
-input[type=checkbox]:checked:focus + label::before {
+.check_input {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 2em;
+	height: 2em;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.check_box {
+	position: absolute;
+	width: 2.5em;
+	height: 2.5em;
+	margin-top: 0.5em;
+	margin-left: -2.5em;
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+}
+
+.check_input:checked + .check_box {
+	background-image: url("../img/checkbox-on.svg");
+}
+.check_input:checked:hover + .check_box,
+.check_input:checked:focus + .check_box,
+.check_input:not(:checked):hover + .check_box,
+.check_input:not(:checked):focus + .check_box {
 	cursor: pointer;
 	opacity: 0.6;
 }
 
-input[type=checkbox]:checked:active + label::before {
-	content: url("../img/checkbox-off.svg");
-	padding-right: 14px;
+.check_input:checked:disabled + .check_box,
+.check_input:not(:checked):disabled + .check_box {
+	opacity: 0.25
+	;
 }
 
-input[type=checkbox]:checked:disabled + label::before {
-	opacity: 0.25;
+.check_input:not(:checked) + .check_box {
+	background-image: url("../img/checkbox-off.svg");
 }
 
-input[type=checkbox]:not(:checked) + label::before {
-	content: url("../img/checkbox-off.svg"); 
-	padding-right: 14px;
-}
+					/* radio*/
 
-input[type=checkbox]:not(:checked):hover + label::before,
-input[type=checkbox]:not(:checked):focus + label::before {
+.radio_box {
+	position: absolute;
+	width: 2.5em;
+	height: 2.5em;
+	margin-top: 0.15em;
+	margin-left: -2.6em;
+	background-image: url("../img/radio-off.svg");
+	background-repeat: no-repeat;
+}					
+
+.check_input:checked + .radio_box {
+	background-image: url("../img/radio-on.svg");
+}
+.check_input:checked:hover + .radio_box,
+.check_input:checked:focus + .radio_box,
+.check_input:not(:checked):hover + .radio_box,
+.check_input:not(:checked):focus + .radio_box {
 	cursor: pointer;
 	opacity: 0.6;
 }
 
-input[type=checkbox]:not(:checked):active + label::before {
-	content: url("../img/checkbox-on.svg");
-	padding-right: 13px;
-}
-
-input[type=checkbox]:not(:checked):disabled + label::before {
-	opacity: 0.25;
-}
-
-input[type=radio]:checked + label::before {
-	content: url("../img/radio-on.svg");
-	padding-right: 13px;
-}
-
-input[type=radio]:checked:hover + label::before,
-input[type=radio]:checked:focus + label::before {
-	cursor: pointer;
-	opacity: 0.6;
-}
-
-input[type=radio]:checked:active + label::before {
-	content: url("../img/radio-off.svg");
-	padding-right: 13px;
-}
-
-input[type=radio]:checked:disabled + label::before {
-	opacity: 0.25;
-}
-
-input[type=radio]:not(:checked) + label::before {
-	content: url("../img/radio-off.svg");
-	padding-right: 14px;
-}
-
-input[type=radio]:not(:checked):hover + label::before,
-input[type=radio]:not(:checked):focus + label::before {
-	cursor: pointer;
-	opacity: 0.6;
-}
-
-input[type=radio]:not(:checked):active + label::before {
-	content: url("../img/radio-on.svg");
-	padding-right: 14px;
-}
-
-input[type=radio]:not(:checked):disabled + label::before {
+.check_input:checked:disabled + .radio_box,
+.check_input:not(:checked):disabled + .radio_box {
 	opacity: 0.25;
 }
 
@@ -1428,7 +1430,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 	margin: 0 auto;
 	padding: 0;
 	padding-left: 71px;
-	padding-right: 25px;
+	padding-right: 0;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1615,10 +1617,10 @@ input[type=radio]:not(:checked):disabled + label::before {
 					/*пагинация*/
 
 .paginator {
-	max-width: 740px;
+	max-width: 760px;
 	margin-top: -15px;
 	margin-bottom: 75px;
-	margin-left: 70px;
+	margin-left: 75px;
 
 	display: flex; 
 	justify-content: space-between;
