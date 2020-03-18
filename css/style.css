@@ -1356,12 +1356,8 @@ input[type="number"] {
 
 .check_input {
 	position: absolute;
-	top: 5px;
-	left: 0;
-	width: 2em;
-	height: 2em;
-	-webkit-appearance: none;
-	appearance: none;
+	overflow: hidden;
+	clip: rect(0 0 0 0); 
 }
 
 .check_box {
@@ -1377,6 +1373,7 @@ input[type="number"] {
 .check_input:checked + .check_box {
 	background-image: url("../img/checkbox-on.svg");
 }
+
 .check_input:checked:hover + .check_box,
 .check_input:checked:focus + .check_box,
 .check_input:not(:checked):hover + .check_box,
@@ -1387,8 +1384,7 @@ input[type="number"] {
 
 .check_input:checked:disabled + .check_box,
 .check_input:not(:checked):disabled + .check_box {
-	opacity: 0.25
-	;
+	opacity: 0.25;
 }
 
 .check_input:not(:checked) + .check_box {
